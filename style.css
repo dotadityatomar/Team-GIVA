@@ -271,3 +271,388 @@ header{
     }
 }
 
+
+
+
+/* footer */
+
+footer{
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #F0F0F0;
+    background-image: url("https://www.giva.co/cdn/shop/files/lines.png?v=1709731978&width=1946");
+    padding: 60px 183px;
+    gap: 50px;
+}
+
+.footer_links{
+    list-style: none;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+}
+
+.footer_links .column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.column h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+  
+.column ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.column li {
+    margin-bottom: 10px;
+}
+  
+.column a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+
+.subscribe-section{
+    min-width: 100%;
+    background-color: #F0F0F0;
+    padding: 60px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.email-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    min-width:40% ;
+    height: 200px;
+}
+.email-container p{
+    font-size: 1.5rem;
+}
+
+.email-input{
+    min-width: 70%;
+    display: flex;
+    align-items: center;
+    border: 2px solid #C1C1C1;
+}
+.email-input:hover{
+    box-shadow: 0px 0px 2px black;
+}
+.email-input input{
+    height: 60px;
+    width: 100%;
+    padding: 20px;
+    border: none;
+}
+
+.email-input button{
+    background-color: white;
+    height: 60px;
+    width: 20%;
+    border: none;
+}
+
+
+.social-icons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    i{
+        font-size: 1.4rem;
+    }
+}
+
+
+
+.footer__content-middle {
+    min-width: 100%; /* Ensure it takes the full width */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    gap: 20px; /* Add space between items */
+    padding: 20px; /* Add some padding */
+}
+
+.footer_app_download, .footer-channel-partners {
+    width: 100%; /* Ensure they take full width */
+    max-width: 400px; /* Limit the max width for better layout */
+    text-align: center; /* Center text within each section */
+}
+
+
+
+.footer_app_download h3, .footer-channel-partners h3 {
+    font-size: 1.3rem; /* Adjust font size for headings */
+}
+
+
+.footer_content-bottom {
+    max-width: 100%;
+    display: flex;
+}
+
+.footer_copyright {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+
+
+.footer-related-searches {
+    background: url(//www.giva.co/cdn/shop/files/lines.png?v=1709731978&width=1946);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-inline: 50px;
+    }
+.footer-section {
+    text-align: left;
+    line-height: 1;
+}
+
+.footer-section-title {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    display: inline-block;
+}
+.footer-links {
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .footer{
+        padding: 60px 100px;
+    }
+
+    .footer_links .column {
+        width: 100%; 
+    }
+
+    .column h4 {
+        font-size: 1.25rem; 
+    }
+
+    .subscribe-section {
+        flex-direction: column; 
+        padding: 30px; 
+        gap: 40px; 
+    }
+
+    .email-container {
+        min-width: 100%; 
+        height: auto; 
+    }
+
+    .email-input {
+        min-width: 100%; 
+    }
+
+    .social-icons {
+        justify-content: center; 
+    }
+
+    .footer__content-middle {
+        flex-direction: column; 
+        align-items: center;
+        gap: 30px;
+        padding: 20px; 
+    }
+
+    .footer_app_download {
+        align-items: center; 
+    }
+
+    .footer-channel-partners {
+        margin-top: 20px; 
+    }
+
+    .footer_content-bottom {
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 20px; 
+    }
+
+    .footer_copyright {
+        margin-top: 10px; 
+    }
+
+    .footer-section {
+        margin-bottom: 15px; 
+    }
+
+    .footer-section-title {
+        display: block; 
+        margin-bottom: 5px; 
+    }
+
+    .footer-links {
+        display: block; 
+    }
+
+    .footer-links a {
+        margin-bottom: 5px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .footer{
+        padding: 60px 30px;
+    }
+    .footer_links {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 0 20px; 
+    }
+
+    .footer_links .column {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .column h4 {
+        font-size: 1.25rem; 
+    }
+
+    .column ul {
+        gap: 5px; 
+    }
+
+    .column li {
+        margin-bottom: 5px; 
+    }
+
+    .subscribe-section {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .email-container {
+        min-width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    .email-input {
+        min-width: 100%;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .footer__content-middle {
+        padding: 10px; /* Add padding for mobile */
+    }
+    
+
+    .footer_app_download {
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-channel-partners {
+        margin-top: 15px;
+    }
+
+    .footer_content-bottom {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .footer_copyright {
+        margin-top: 5px;
+    }
+
+    .footer-section {
+        margin-bottom: 10px;
+    }
+
+    .footer-section-title {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .footer-links {
+        display: block;
+    }
+
+    .footer-links a {
+        margin-bottom: 5px;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .footer{
+        padding: 10px 10px;
+    }
+    .footer_links {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 0 20px; 
+    }
+
+}
+
+
+@media (max-width: 375px) {
+    .footer__content-middle {
+        width: 200px;
+        flex-direction: column; /* Ensure stacking for small screens */
+        padding: 10px; /* Add padding */
+    }
+
+    .footer_app_download{
+        display: none;
+    }
+    .footer-channel-partners {
+        width: 100%; /* Full width */
+        max-width: none; /* Remove max-width for better flexibility */
+        text-align: center; /* Center text */
+    }
+
+    .footer_app_download h3, .footer-channel-partners h3 {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+
+    .footer-section {
+        margin-bottom: 10px; /* Space between footer sections */
+    }
+
+    .footer-section-title {
+        font-size: 14px; /* Adjust font size for titles */
+    }
+
+    .footer-links a {
+        font-size: 12px; /* Adjust font size for links */
+    }
+}
