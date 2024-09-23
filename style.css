@@ -791,6 +791,46 @@ header{
 }
 
 
+/* --------------Shop by color --------------*/
+
+.shop-by-color{
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    margin-block: 80px;
+    gap: 50px;
+}
+
+.shop-by-color .shop-by-imgs{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.shop-by-color .shop-by-imgs img{
+    min-width: 40%;
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+@media screen and (max-width:425px) {
+    .shop-by-color .shop-by-imgs{
+        flex-direction: column;
+        gap: 50px;
+        height: auto;
+    }
+    .shop-by-color .shop-by-imgs img{
+        min-width: 100%;
+        height: 400px;
+    }
+}
+
 
 
 
