@@ -958,6 +958,104 @@ header{
 }
 
 
+/* --------------Gold jewellery -------------- */
+.gold-jewellery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 40px; */
+    margin-block: 50px;
+    flex-wrap: wrap;
+
+}
+.gold-wrapper {
+    margin-block: 50px;
+    min-width: 100%;
+    position: relative;
+    z-index: -5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gold-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding: 20px 0; */
+    cursor: pointer;
+}
+
+.gold-item {
+    min-width: 150px;
+    /* margin: 0 15px; */
+    text-align: center;
+}
+
+.gold-item img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gold-item:hover img {
+    transform: scale(1.1);
+}
+
+.gold-item p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 425px) {
+    .gold-item img {
+        width: 200px;
+        height: 200px;
+    }
+    .gold-item:hover img {
+        transform: none;
+    }
+    
+}
+
+
+.gold-jewellery-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-block: 50px;
+}
+.img-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.img-row img{
+    max-width: 650px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+@media screen and (max-width: 660px ) {
+    .img-row img{
+        max-width: 270px;
+        height: auto;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+    
+}
 
 
 
