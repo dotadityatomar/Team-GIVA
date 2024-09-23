@@ -633,6 +633,57 @@ header{
     color: #ff2a50;
 }
 
+/* -------------- Shop-by-recipient------------- */
+
+.shop-by-recipient{
+    min-width: 100%;
+    margin-block: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.shop-by-imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.shop-by-imgs img{
+    max-width: 600px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+@media screen and (max-width:768px) {
+    .shop-by-imgs img{
+        width:400px;
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+}
+@media screen and (max-width:425px) {
+    .shop-by-imgs img{
+        width:300px;
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+}
+@media screen and (max-width:320px) {
+    .shop-by-imgs img{
+        width:200px;
+        height: 100px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+}
 
 
 
