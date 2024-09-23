@@ -1058,6 +1058,47 @@ header{
     
 }
 
+/* --------------Essenstials for you-------------- */
+
+.essentials-for-you{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-block: 50px;
+}
+.essential-for-you-img-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.essentials-img-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.essentials-img-row img{
+    max-width: 650px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+@media screen and (max-width: 660px) {
+    .essentials-img-row img{
+        max-width: 270px;
+        height: auto;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+}
 
 
 
