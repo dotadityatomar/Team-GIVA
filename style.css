@@ -151,11 +151,12 @@ a{
 .dropdown {
     display: none;
     position: absolute;
-    top: 40px;
+    top: 30px;
     left: 0;
     background-color: #fff;
     padding: 10px 0;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 .nav-links li:hover .dropdown {
@@ -164,7 +165,8 @@ a{
 
 .dropdown li {
     padding: 10px 20px;
-    width: 150px;
+    width: 250px;
+    list-style: none;
 }
 
 .dropdown a {
