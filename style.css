@@ -10,20 +10,14 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
+    scroll-behavior: smooth;
 }
 a{
     text-decoration: none;
     color: black;
 }
-
-header{
-    min-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.header .info{
+/*----------------------- header----------------------- */
+.info{
     min-width: 100%;
     background-color: #FCDEDA;
     padding-block: 10px;
@@ -36,12 +30,26 @@ header{
     color: rgb(90, 86, 86);
 }
 
-.header .navbar_1{
+header{
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky; 
+    top: 0;
+}
+
+
+
+.header .navbar_1 {
+    z-index: 500; /* Ensures navbar stays on top of other content */
+    background-color: white; /* Ensures the navbar has a background while sticky */
     min-width: 100%;
     padding-block: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .navbar_1 .logo img{
@@ -100,6 +108,14 @@ header{
     text-transform: uppercase;
 }
 
+.header .navbar_2 {
+    min-width: 100%;
+    position: sticky;
+    top: 70px; /* This depends on the height of the first navbar */
+    z-index: 99; /* Stays below the first navbar */
+    background-color: white; /* Ensures navbar has a background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a shadow for separation */
+}
 
 .navbar_2 {
     padding: 15px 20px;
@@ -108,10 +124,10 @@ header{
 .nav-links {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* gap: 10px; */
+    gap: 20px;
 }
 
 .nav-links li {
@@ -209,7 +225,7 @@ header{
 }
 
 
-/* Media query for mobile devices (max-width: 425px) */
+
 @media (max-width: 425px) {
     body {
         font-size: 14px; 
@@ -274,7 +290,7 @@ header{
 
 
 
-/* footer */
+/*----------------------- Footer----------------------- */
 
 footer{
     min-width: 100%;
@@ -569,7 +585,7 @@ footer{
     }
 
     .footer__content-middle {
-        padding: 10px; /* Add padding for mobile */
+        padding: 10px; 
     }
     
 
@@ -627,32 +643,32 @@ footer{
 @media (max-width: 375px) {
     .footer__content-middle {
         width: 200px;
-        flex-direction: column; /* Ensure stacking for small screens */
-        padding: 10px; /* Add padding */
+        flex-direction: column; 
+        padding: 10px; 
     }
 
     .footer_app_download{
         display: none;
     }
     .footer-channel-partners {
-        width: 100%; /* Full width */
-        max-width: none; /* Remove max-width for better flexibility */
-        text-align: center; /* Center text */
+        width: 100%; 
+        max-width: none; 
+        text-align: center;
     }
 
     .footer_app_download h3, .footer-channel-partners h3 {
-        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        font-size: 1.2rem; 
     }
 
     .footer-section {
-        margin-bottom: 10px; /* Space between footer sections */
+        margin-bottom: 10px; 
     }
 
     .footer-section-title {
-        font-size: 14px; /* Adjust font size for titles */
+        font-size: 14px; 
     }
 
     .footer-links a {
-        font-size: 12px; /* Adjust font size for links */
+        font-size: 12px; 
     }
 }
