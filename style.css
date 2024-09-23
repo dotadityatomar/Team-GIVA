@@ -734,7 +734,30 @@ header{
     object-fit: cover;
 }
 
+/* --------------Gifting guid ---------------- */
+.gifting-guid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-block:50px;
+}
+.gifting-imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
+.gifting-imgs img{
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+
+}
 
 
 
