@@ -30,20 +30,21 @@ a{
     color: rgb(90, 86, 86);
 }
 
-header{
+.header {
     min-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: sticky; 
     top: 0;
+    z-index: 1000; 
 }
 
 
 
 .header .navbar_1 {
-    z-index: 500; /* Ensures navbar stays on top of other content */
-    background-color: white; /* Ensures the navbar has a background while sticky */
+    z-index: 1001;
+    background-color: white; 
     min-width: 100%;
     padding-block: 10px;
     display: flex;
@@ -111,10 +112,10 @@ header{
 .header .navbar_2 {
     min-width: 100%;
     position: sticky;
-    top: 70px; /* This depends on the height of the first navbar */
-    z-index: 99; /* Stays below the first navbar */
-    background-color: white; /* Ensures navbar has a background */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a shadow for separation */
+    top: 70px; 
+    z-index: 1000; 
+    background-color: white; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .navbar_2 {
@@ -480,21 +481,22 @@ header{
 
 
 /* -------------- Recommended------------- */
-.recommended{
+.recommended {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 50px;
+    z-index: 1; 
+    position: relative; 
 }
 
-.recommended-section-card{
+.recommended-section-card {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-
 }
 
 .product-card {
@@ -503,9 +505,9 @@ header{
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    /* margin: 20px; */
     text-align: center;
     transition: transform 0.3s ease;
+    z-index: 1; 
 }
 
 .product-card:hover {
@@ -517,6 +519,7 @@ header{
     width: 100%;
     height: 250px;
     overflow: hidden;
+    z-index: 1; 
 }
 
 .product-image img {
@@ -543,6 +546,7 @@ header{
 
 .badge {
     position: absolute;
+    z-index: -5;
     top: 10px;
     left: 10px;
     background-color: #3A923B;
@@ -611,13 +615,9 @@ header{
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
-    background: transparent;
-    padding: 5px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    z-index: 2; 
 }
+
 
 .heart-icon {
     font-size: 35px;
@@ -973,7 +973,7 @@ header{
     margin-block: 50px;
     min-width: 100%;
     position: relative;
-    z-index: -5;
+    /* z-index: -5; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1023,7 +1023,7 @@ header{
     
 }
 
-/* Gold Jewellery Bottom */
+/*---------------- Gold Jewellery Bottom------------- */
 
 .gold-jewellery-bottom{
     display: flex;
@@ -1164,33 +1164,6 @@ header{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*----------------------- Footer----------------------- */
 
 footer{
@@ -1248,7 +1221,6 @@ footer{
 }
 
 
-
 .subscribe-section{
     min-width: 100%;
     background-color: #F0F0F0;
@@ -1294,7 +1266,6 @@ footer{
     border: none;
 }
 
-
 .social-icons{
     display: flex;
     gap: 20px;
@@ -1306,29 +1277,25 @@ footer{
     }
 }
 
-
-
 .footer__content-middle {
-    min-width: 100%; /* Ensure it takes the full width */
+    min-width: 100%; 
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items */
-    gap: 20px; /* Add space between items */
-    padding: 20px; /* Add some padding */
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px; 
 }
 
 .footer_app_download, .footer-channel-partners {
-    width: 100%; /* Ensure they take full width */
-    max-width: 400px; /* Limit the max width for better layout */
-    text-align: center; /* Center text within each section */
+    width: 100%; 
+    max-width: 400px; 
+    text-align: center; 
 }
-
 
 
 .footer_app_download h3, .footer-channel-partners h3 {
-    font-size: 1.3rem; /* Adjust font size for headings */
+    font-size: 1.3rem; 
 }
-
 
 .footer_content-bottom {
     max-width: 100%;
