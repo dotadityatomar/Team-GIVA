@@ -718,7 +718,21 @@ header{
 }
 
 
+/* --------------Promotion image ---------------- */
+.promotion-img{
+    min-width: 100%;
+    margin-block: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 3;
+}
 
+.promotion-img img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
 
 
