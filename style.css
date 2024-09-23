@@ -1101,6 +1101,66 @@ header{
 }
 
 
+/* --------------customer stories-------------- */
+
+.customer-stories{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-block: 100px;
+}
+.stories{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.story-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    min-height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    /* padding: 0 30px; */
+    text-align: center;
+    background-color: #FFF2F5;
+    border-radius: 10px;
+    position: relative; 
+    z-index: -5;
+}
+
+.story-card img {
+    position: absolute;
+    bottom: -40px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 80px;
+    border-radius: 50%;
+}
+
+
+.story-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .stories{
+        flex-direction: column;
+        gap: 50px;
+        height: auto;
+    }
+}
+
 
 
 
