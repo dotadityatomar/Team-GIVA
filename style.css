@@ -838,7 +838,7 @@ header{
 
 .latest-collections{
     min-width: 100%;
-    margin-block: 80px;
+    margin-block: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -915,6 +915,47 @@ header{
     }
 }
 
+/* ------------Shop by occasion-------- */
+.shop-by-occasion{
+    min-width: 100%;
+    background: linear-gradient(to right, #EFE2F9 10%, #FBF3CD 100%);
+}
+.occasion-img{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 30px; */
+    
+}
+
+.occasion-img img{
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+@media screen and (max-width:768px){
+    .shop-by-occasion{
+        /* background: linear-gradient(to right, #ffffff 10%, #ffffff 100%); */
+        background: none;
+    }
+    .occasion-img{
+        gap: 20px;
+    }
+} 
+    
+@media screen and (max-width:425px){
+    
+    .occasion-img{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .occasion-img img{
+        width: 60%;
+        height: 400px;
+    }
+}
 
 
 
