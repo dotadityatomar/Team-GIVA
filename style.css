@@ -97,6 +97,9 @@ a{
     gap: 30px;
     font-size: 1.5rem;
 }
+.navbar_1 .menu-icon{
+    display: none;
+}
 
 .icon-style{
     display: flex;
@@ -121,6 +124,7 @@ a{
 .navbar_2 {
     padding: 15px 20px;
 }
+
 
 .nav-links {
     list-style: none;
@@ -227,8 +231,12 @@ a{
     }
 }
 @media (max-width: 768px){
+    .navbar_1 .menu-icon{
+        display: initial;
+        cursor: pointer;
+    }
     .navbar_2 .nav-links{
-        flex-direction: column;
+        display: none;
     }
     
     .dropdown li{
@@ -339,7 +347,7 @@ a{
     position: relative;
     display: flex;
     align-items: center;
-    z-index: -5;
+    z-index: 1;
 }
 
 .category-container {
@@ -405,6 +413,15 @@ a{
 .category-container::-webkit-scrollbar {
     display: none; /* Hide scrollbar */
 }
+
+@media screen and (max-width: 768px) {
+    .arrow{
+       padding: 5px;
+       background-color: transparent;
+       box-shadow: none;
+    }
+}
+
 
 /* --------------GIVA ESSENTIALS --------------*/
 
