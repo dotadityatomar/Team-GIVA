@@ -1298,7 +1298,8 @@ footer{
 .footer__content-middle {
     min-width: 100%; 
     display: flex;
-    flex-direction: column; 
+    flex-direction: row; 
+    justify-content: space-between;
     align-items: center; 
     gap: 20px; 
     padding: 20px; 
@@ -1332,10 +1333,11 @@ footer{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding-inline: 50px;
-    }
+    
+}
 .footer-section {
     text-align: left;
-    line-height: 1;
+    line-height: 1.5;
 }
 
 .footer-section-title {
