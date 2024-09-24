@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="GiftStore_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
     rel="stylesheet">
 </head>
 <body>
     
+    <!---------------- HEADER ---------------->
+    <div class="info">
+      <a href="#">Pan India Free Shipping!</a>
+    </div>
     <header class="header">
-        <div class="info">
-            <a href="#">Pan India Free Shipping!</a>
-        </div>
-
         <nav class="navbar_1">
             <div class="logo">
                 <a href="#"><img src="https://www.giva.co/cdn/shop/files/300x129.png?v=1708494402&width=150" alt="Logo"></a>
@@ -42,38 +42,68 @@
                     <p>Cart</p>
                 </div>
             </div>
+            <div class="menu-icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
         </nav>
+
         <nav class="navbar_2">
-            <ul class="nav-links">
-                <li><a href="#">Shop by Category</a>
-                    <ul class="dropdown">
-                        <!-- Add sub-menu items here -->
-                    </ul>
-                </li>
-                <li><a href="#">Latest Collections</a>
-                    <ul class="dropdown">
-                        <!-- Add sub-menu items here -->
-                    </ul>
-                </li>
-                <li><a href="#">Men's Jewellery</a>
-                    <ul class="dropdown">
-                        <!-- Add sub-menu items here -->
-                    </ul>
-                </li>
-                <li><a href="#">Gift Store</a>
-                    <ul class="dropdown">
-                        <!-- Add sub-menu items here -->
-                    </ul>
-                </li>
-                <li><a href="#">Gold with Lab Diamonds</a></li>
-                <li><a href="#">Offers</a></li>
-                <li><a href="#">More at GIVA</a>
-                    <ul class="dropdown">
-                        <!-- Add sub-menu items here -->
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+          <ul class="nav-links">
+              <li><a href="#">Shop by Category</a>
+                  <ul class="dropdown">
+                      <li><a href="#">All</a></li>
+                      <li><a href="#">Rings</a></li>
+                      <li><a href="#">Necklaces & Pendants</a></li>
+                      <li><a href="#">Bracelets</a></li>
+                      <li><a href="#">Earrings</a></li>
+                      <li><a href="#">Anklets</a></li>
+                      <li><a href="#">Other Categories</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">Latest Collections</a>
+                  <ul class="dropdown">
+                      <li><a href="#">The Bhumi Collection</a></li>
+                      <li><a href="#">Wings of Wonder</a></li>
+                      <li><a href="#">Cherry Pop Collection</a></li>
+                      <li><a href="#">Vivah Da Swag</a></li>
+                      <li><a href="#">Love in Paris</a></li>
+                      <li><a href="#">Colours of Life Collections</a></li>
+                      <li><a href="#">Convertible Collection</a></li>
+                      <li><a href="#">Just Arrived</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">Men's Jewellery</a>
+                  <ul class="dropdown">
+                      <li><a href="#">All</a></li>
+                      <li><a href="#">Rings</a></li>
+                      <li><a href="#">Pendants</a></li>
+                      <li><a href="#">Bracelets</a></li>
+                      <li><a href="#">Chains</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">Gift Store</a>
+                  <ul class="dropdown">
+                      <li><a href="#">GIVA Gift Store</a></li>
+                      <li><a href="#">Shop By Occassion</a></li>
+                      <li><a href="#">Shop By Theme</a></li>
+                      <li><a href="#">Shop By Recipient</a></li>
+                      <li><a href="#">Shop By Price</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">Gold with Lab Diamonds</a></li>
+              <li><a href="#">Offers</a></li>
+              <li><a href="#">More at GIVA</a>
+                  <ul class="dropdown">
+                      <li><a href="#">Media Mentions</a></li>
+                      <li><a href="#">Corporate Partnerships</a></li>
+                      <li><a href="#">Jewellery care</a></li>
+                      <li><a href="#">GIVA Care</a></li>
+                      <li><a href="#">GIVA Blogs</a></li>
+                      <li><a href="#">Support & FAQs</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </nav>
     </header>
 
     <section class="container">
@@ -116,15 +146,18 @@
   
       <section class="shop-by-theme-section">
         <div class="shop-by-theme-div">
+          <div class="top">
             <a href="#"><img src="./Assets/11.webp"></a>
             <a href="#"><img src="./assets/12.webp"></a>
             <a href="#"><img src="./assets/13.webp"></a>
+          </div>
+          <div class="bottom">
             <a href="#"><img src="./assets/14.webp"></a>
             <a href="#"><img src="./assets/15.webp"></a>
             <a href="#"><img src="./assets/16.webp"></a>
+          </div>
         </div>
-      </section>
-       
+      </section>      
     
     <div class="most-gifted">
         <h2>Most Gifted</h2>
