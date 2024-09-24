@@ -447,15 +447,15 @@ input[type="radio"] {
 
 @media (max-width: 769px) {
     .shop-by-theme-div {
-        display: flex; /* Use flex to align items horizontally */
-        gap: 20px; /* Set the gap between the two divs */
-        flex-wrap: wrap; /* Ensure divs wrap if there's not enough space */
+        display: flex; 
+        gap: 20px;
+        flex-wrap: wrap; 
     }
 
     .top, .bottom {
         display: inline-block;
-        width: calc(50% - 10px); Adjust width to ensure they fit within the container with a 10px gap
-        vertical-align: top; /* Align divs to the top */
+        width: calc(50% - 10px); 
+        vertical-align: top; 
         padding: 0;
     }
 
