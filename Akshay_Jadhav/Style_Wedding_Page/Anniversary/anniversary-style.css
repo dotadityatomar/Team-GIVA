@@ -16,6 +16,7 @@ a{
     text-decoration: none;
     color: black;
 }
+
 /*----------------------- header----------------------- */
 .info{
     min-width: 100%;
@@ -184,6 +185,8 @@ a{
 }
 
 
+
+
 .info{
     min-width: 100%;
     background-color: #FCDEDA;
@@ -296,8 +299,7 @@ a{
     }
 }
 
-
-/* --------------HERO SECTION -------------- */
+/*  --------------HERO SECTION -------------- */ 
 
 :root {
     --font-heading-weight: 400;
@@ -333,6 +335,7 @@ a{
     overflow: hidden;
     z-index: -1;
 }
+
 
 
 /*-------------------sub nav------------------ */
@@ -724,7 +727,6 @@ ul li:hover ul.drop{
 }
 
 
-
 /*----------------------- Footer----------------------- */
 
 footer{
@@ -841,7 +843,8 @@ footer{
 .footer__content-middle {
     min-width: 100%; 
     display: flex;
-    flex-direction: column; 
+    flex-direction: row; 
+    justify-content: space-between;
     align-items: center; 
     gap: 20px; 
     padding: 20px; 
@@ -875,10 +878,11 @@ footer{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding-inline: 50px;
-    }
+    
+}
 .footer-section {
     text-align: left;
-    line-height: 1;
+    line-height: 1.5;
 }
 
 .footer-section-title {
@@ -1101,6 +1105,7 @@ footer{
         font-size: 12px; 
     }
 }
+
 
 .help {
     position: fixed;

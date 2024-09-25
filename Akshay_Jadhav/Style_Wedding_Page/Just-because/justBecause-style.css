@@ -16,6 +16,8 @@ a{
     text-decoration: none;
     color: black;
 }
+
+
 /*----------------------- header----------------------- */
 .info{
     min-width: 100%;
@@ -184,6 +186,8 @@ a{
 }
 
 
+
+
 .info{
     min-width: 100%;
     background-color: #FCDEDA;
@@ -296,37 +300,21 @@ a{
     }
 }
 
-
 /* --------------HERO SECTION -------------- */
 
-:root {
-    --font-heading-weight: 400;
-    --font-heading-scale:1.2;
-    --color-foreground:#181818;
-    --font-heading-scale: 1.2;
+.hero-section{
+    min-width: 100%;
+    margin-block: 20px;
+    
 }
 
-.collection_title {
-    padding: 30px 70px 16px;
-    font-size: 20px;
-    margin: 0;
-    font-family: "Lato", Assistant, sans-serif;
-    font-size:32px;
-    font-weight: 400;
-    font-weight: var(--font-heading-weight);
-    letter-spacing: calc(var(--font-heading-scale)* .06rem);
-    color: rgb(var(--color-foreground));
-    line-height: calc(1 + .3 / max(1, var(--font-heading-scale)));
-    word-break: break-word;
+.hero-section img{
+    width: 100%;
+    height: 100%;
+    /* min-height: 50%;
+    min-width: 50%; */
+    object-fit: cover;
 }
-
-@media screen and (max-width: 750px) {
-    .collection_title {
-        font-size: 20px;
-        padding-left: 20px;
-    }
-}
-
 .slider {
     width: 100%;
     position: relative;
@@ -683,6 +671,15 @@ ul li:hover ul.drop{
     display: block;
 }
 
+.light-text {
+    color: #646363;
+}
+
+.collapsible-content ol {
+    padding:20px 20px 20px 40px;
+
+}
+
 @media (max-width: 768px) {
     body {
         padding: 15px;
@@ -720,6 +717,10 @@ ul li:hover ul.drop{
     .collapsible-content {
         padding: 10px;
         font-size: 12px;
+    }
+
+    .collapsible-content ol {
+        padding:10px 10px 10px 20px;
     }
 }
 
@@ -841,7 +842,8 @@ footer{
 .footer__content-middle {
     min-width: 100%; 
     display: flex;
-    flex-direction: column; 
+    flex-direction: row; 
+    justify-content: space-between;
     align-items: center; 
     gap: 20px; 
     padding: 20px; 
@@ -875,10 +877,11 @@ footer{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding-inline: 50px;
-    }
+    
+}
 .footer-section {
     text-align: left;
-    line-height: 1;
+    line-height: 1.5;
 }
 
 .footer-section-title {
@@ -1101,6 +1104,7 @@ footer{
         font-size: 12px; 
     }
 }
+
 
 .help {
     position: fixed;
