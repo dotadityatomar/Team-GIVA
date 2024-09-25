@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Lato&display=swap');
 
@@ -6,13 +7,17 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    Font-style: normal;
+    Font-family: lato, avenir next, sans-serif;
+}
 
 .hero_image img{
     width: 100%;
     height: 100%;
     
     position: inherit !important;
-    margin: ;
+    
     
 
 }
@@ -21,46 +26,418 @@
     
     
 }
+ul li ul.drop li{
+    display: block;
+    margin: 14px 0px;
+
+
+}
+ul li ul.drop{
+    width: auto;
+    position:absolute;
+    background-color: white;
+    border: #222;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover{
+    background: #222;
+    
+    
+}
+ul li:hover ul.drop{
+    display: block;
+    width: 15%;
+    font-size: large;
+    
+}
+.details:hover{
+    cursor: pointer;
+    
+}.Sort_By .BestSelling .drop li:hover{
+    background-color:#0000ee;
+    color: white;
+}
+
 .list{
+    list-style: none;
     display: flex;
-    flex-direction: row;
-    gap: 30px;
-    list-style-type:none;
-    & li{
-        margin: 25px;
-    }
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 23px;
+
+}
+
+.penrem{
+    display: flex;
+    margin: 10px;
+
+    
+    
+    
+}
+.Pendant1{
+    background-color: #f3a9c6, opacity 46.0%;  
+    height: 25px;
+    width:6%;
+    margin: 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+
+    
+}
+.Pendant1:hover{
+    background-color:#e9718b;
+    color: white;
+    cursor: pointer;
+
+}
+.remove_all{
+    text-decoration: underline;
+    font-size: 16px;
+    cursor:pointer;
+    border:none;
+    background-color: white;
 }
 img{
-    width: 80%;
-    height: 70%;
+    width: 100%;
+    
     
 }
 .container {
-    display: flex;
+   /* display: flex;
     justify-content:center;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    
-    
-
-    
+    /*flex-flow: row wrap;/
+    margin-top: -180px;*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap:-20px;
+      
 }
-.cards{
-    margin: 10px;
-    & .strike{
-        font-size:1rem;
+.Sort_by{
+    background-color: #e9718b;
+    display: inline;
+}
+@media (max-width: 1440px) {
+    .container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .list{
+        list-style: none;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-top: 20px;
+    }
+    .hero_image img{
+        width: 100%;
+        height: 350px;
+        
+        position: inherit !important;
+    }
+    .product_name{
+        color: grey;
+        font-size: 2px;
+        
+        /*text-overflow: ellipsis;*/
+    }
+    .Pendant1{
+        background-color: #f3a9c6, opacity 46.0%;  
+        height: 25px;
+        width: 30%;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        border: none;
+        font-size: 18px;
+    
+    }
+    .remove_all{
+        text-decoration: underline;
+        font-size: 18px;
+        cursor:pointer;
+
     }
     
+}    
 
+@media (max-width: 1024px) {
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+        }
+    .list{
+        list-style: none;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .hero_image img{
+        width: 100%;
+        height: 400px;
+            
+        position: inherit !important;
+            
+            
+        
+   }
+    .Pendant1{
+         background-color: #f3a9c6, opacity 46.0%;  
+        height: 30px;
+        width: 50%;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        border: none;
+        font-size: 18px;
+        
+    }
+    .remove_all{
+        text-decoration: underline;
+        font-size: 18px;
+        cursor:pointer;
+        width: 50%;
+    
+    }
+    .rating{
+        font-size: 10px;
+        padding: 1px;
+
+    }
+    ul li:hover ul.drop{
+        display: block;
+        width: 30%;
+        font-size: large;
+        
+    }
+
+}                
+@media (max-width: 768px) {
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        }
+
+    .details{
+        font-size: 15px;
+    }
+
+    
+    .hero_image img{
+        width: 100%;
+        height: 300px;
+            
+        position: inherit !important;
+            
+            
+        
+    }
+    .Pendant1{
+         background-color: #f3a9c6, opacity 46.0%;  
+        height: 30px;
+        width: 40%;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        border: none;
+        font-size: 14px;
+        
+    }
+    .remove_all{
+        text-decoration: underline;
+        font-size: 14px;
+        cursor:pointer;
+    
+    }
+    ul li:hover ul.drop{
+        display: block;
+        width: 40%;
+        font-size:small;
+        
+        
+    }
+
+}                
+
+@media (max-width: 425px) {
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .list{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        list-style-type:none;
+        font-size: 15px;
+        & li{
+        margin: 20px;
+        }
+    }
+    .hero_image img{
+        width: 100%;
+        height: 200px;
+        
+        position: inherit !important;
+        
+        
+    
+    }
+    ul li:hover ul.drop{
+        display: block;
+        width: 50%;
+        font-size:x-small;
+        
+        
+    }
+    
 }
+
+.shorting{
+    position: relative;
+    left: 20px;
+    font-size: 25px;
+    margin: 20px;
+    color: grey;
+}
+    
+
+.rating {
+    font-size: 1rem;
+    color:black;
+    background-color: #f2f2f2;
+    width: 25%;
+    height: 35px;
+    position: relative;
+    bottom: 39px;
+    border-radius: 0px 20px 0px 0px;
+    padding: 5px;
+    & > span{
+        color: gold;
+    }
+}
+.heart-icon{
+    position: relative;
+    bottom: 10px;
+    left: 3px;
+    margin-left: 3px;
+    font-size: 55px;
+    color: #ff4f71;
+    transition: color 0.3s ease;
+      
+}
+
+.wishlist{
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    width: 50px;
+    height: 50px;
+
+    background-color:whitesmoke;
+    border-radius: 50%;
+}
+
+.main-image:hover {
+    opacity: 0;
+}
+
+.hover-image:hover {
+    opacity: 1;
+}
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+
+.cards{ 
+    margin:20px;
+    position: relative;
+
+    & .strike {
+        font-size:1.2rem;
+    }
+}
+.price{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.product_name{
+    color: grey;
+    font-size: 21.5px;
+    
+    /*text-overflow: ellipsis;*/
+}
+
+      
+.product_name:hover {text-decoration: underline;
+cursor: pointer; }
 .addtocart{
-    background-image: linear-gradient(to right, #f2c2e1, rgb(247, 247, 240));
+    background: linear-gradient(92.32deg, #ffb9c7 12.41%, #ffe5ea 119.21%);
     border: none;
-    width: 95%;
+    width: 100%;
     height: 50px;
     border-radius: 10px;
     font-size: larger;
     margin-top:10px ;
     
 }
+.addtocart:hover{
+    background-color: #e9718b;
+   background-image: linear-gradient(to right, #e9718b, #e9718b);
+    color:white;
+    
+}
 
+
+/* -------------Collapsible----------------- */
+
+.collapsible {
+    /* margin-bottom: 10px; */
+    padding-inline: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.collapsible-header {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collapsible-content {
+    padding: 15px;
+    display: none;
+    font-size: 14px;
+    color: #555;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.collapsible.active .arrow {
+    transform: rotate(180deg);
+}
+
+.collapsible.active .collapsible-content {
+    display: block;
+}

@@ -1,0 +1,113 @@
+.h2-needhelp{
+    font-family: "Lato", Assistant, sans-serif;
+
+}
+
+headers h1, h2, .video-slider-headers h3, .video-slider-headers p.subtext {
+    text-align: center;
+}
+.h2-needhelp{
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+.h3-wearehere{
+    font-size: 2.25rem;
+    line-height: 2.67rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+.subtext{
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+
+.container-video+button{
+    position: relative;
+}
+
+.collection-list {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: auto;
+    gap: 1rem;
+    padding: 0.5rem;
+    scrollbar-width: none;
+    list-style: none;
+    
+}
+.collection-list::-webkit-scrollbar{
+    display: none;
+}
+
+#giva-help {
+    height: 75vh;
+}
+#giva-help {
+    width: 100%;
+     border-top-width: 0;
+     border-bottom-width: 0;
+     border-left-width: 0;
+     border-right-width: 0;
+}
+
+
+.support-text{
+    text-align: center;
+}
+
+.support{
+    
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0 1rem 0;
+    display: block;
+}
+.support-main{
+    margin: 1.5rem 0 1rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5rem;
+
+}
+
+.card{
+    width: auto;
+}
+
+.arrow-button {
+    position: absolute;
+    top: 30%;
+    width: 50px; 
+    height: 50px; 
+    border: none;
+    border-radius: 50%;
+    background-color: grey; 
+    color: white; 
+    font-size: 20px; 
+    cursor: pointer;
+    z-index: 22;
+}
+
+.left-button {
+    left: 0px; /* Position left button */
+}
+.right-button {
+    right: 0px; /* Position right button */
+}
+
+.chat-icon{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+
+}
