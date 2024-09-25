@@ -184,8 +184,6 @@ a{
 }
 
 
-
-
 .info{
     min-width: 100%;
     background-color: #FCDEDA;
@@ -313,7 +311,7 @@ a{
     font-size: 20px;
     margin: 0;
     font-family: "Lato", Assistant, sans-serif;
-    font-size: 28px;
+    font-size:32px;
     font-weight: 400;
     font-weight: var(--font-heading-weight);
     letter-spacing: calc(var(--font-heading-scale)* .06rem);
@@ -322,6 +320,12 @@ a{
     word-break: break-word;
 }
 
+@media screen and (max-width: 750px) {
+    .collection_title {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+}
 
 .slider {
     width: 100%;
@@ -644,13 +648,27 @@ ul li:hover ul.drop{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #777676;
 }
 
 .collapsible-content {
     padding: 15px;
     display: none;
-    font-size: 14px;
-    color: #555;
+    color: #121212;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-family:"Lato", "Avenir Next", sans-serif;
+    line-height: 30px;
+}
+
+.collapsible-content ul {
+    padding-left: 40px;
+}
+
+.collapsible-content a {
+    text-decoration: underline;
+    color: blue;
+    padding-right: 5px;
 }
 
 .arrow {
@@ -670,7 +688,7 @@ ul li:hover ul.drop{
         padding: 15px;
     }
     
-    .collapsible-header {
+    /* .collapsible-header {
         padding: 12px;
         font-size: 14px;
     }
@@ -682,7 +700,7 @@ ul li:hover ul.drop{
 
     .arrow {
         font-size: 14px;
-    }
+    } */
 }
 
 /* For very small devices (like phones) */
@@ -704,25 +722,6 @@ ul li:hover ul.drop{
         font-size: 12px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
