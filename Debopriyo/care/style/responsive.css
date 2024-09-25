@@ -1,0 +1,35 @@
+@media (min-width: 768px) {
+    .box-right-2, .box-right-4, .box-right-6 {
+        width: 48%;
+    }
+}
+
+.tu-2, .tu-4 {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: right;
+}
+
+.xw-1, .xw-4, .xw-5 {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: right;
+    padding-top: 25px;
+}
+
+/* Responsive layout for tablets and larger devices */
+@media (min-width: 768px) {
+    .content {
+        flex-direction: row;
+    }
+}
+
+/* Responsive layout for desktops and large screens */
+@media (min-width: 1024px) {
+    .text h1 {
+        font-size: 3rem;
+    }
+    .text h1 span {
+        font-size: 3.5rem;
+    }
+}
