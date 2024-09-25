@@ -58,6 +58,12 @@ ul li:hover ul.drop{
     background-color:#0000ee;
     color: white;
 }
+.details{
+    color: #757575;
+}
+.BestSelling{
+    color: #757575;
+}
 
 .list{
     list-style: none;
@@ -121,7 +127,6 @@ img{
       
 }
 .Sort_by{
-    background-color: #e9718b;
     display: inline;
 }
 @media (max-width: 1440px) {
@@ -229,6 +234,7 @@ img{
 
     .details{
         font-size: 15px;
+        
     }
 
     
