@@ -11,8 +11,22 @@
   color: rgb(90, 86, 86);
 }
 
+/*----------------------- header----------------------- */
+.info{
+  width: 100%;
+  background-color: #FCDEDA;
+  padding-block: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.info a:hover{
+  text-decoration: underline;
+  color: rgb(90, 86, 86);
+}
+
 .header {
-  min-width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -161,9 +175,24 @@
 
 .dropdown a:hover {
   color: #e9718b;
-  background-color: #f1f1f1;
+  /* background-color: #f1f1f1; */
 }
 
+/* Nested dropdown (submenu) */
+.dropdown-submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.dropdown li:hover .dropdown-submenu {
+  display: block;
+}
 
 
 
@@ -182,6 +211,9 @@
 
 
 @media (max-width: 1024px) {
+  .header{
+      /* gap: 20px; */
+  }
   .header .navbar_1 {
       flex-direction: column;
       align-items: center;
@@ -193,7 +225,7 @@
   }
 
   .navbar_1 .search {
-      min-width: 50%;
+      min-width: 90%;
       input{
           min-width: 90%
       }
@@ -216,16 +248,9 @@
   .navbar_2 .nav-links{
       display: none;
   }
-  .navbar_1 .nav_icons {
-      display: none;
-  }
-
+  
   .dropdown li{
       display: none;
-  }
-  .navbar_2{
-      padding: 0;
-      margin: 0;
   }
 }
 
@@ -246,7 +271,7 @@
   }
 
   .navbar_1 .search {
-      display: none;
+      min-width: 90%; 
   }
 
   .navbar_1 .search input {
@@ -263,6 +288,9 @@
       font-size: 0.6rem; 
   }
 
+  .navbar_2 {
+      padding: 10px 15px; 
+  }
 
   .nav-links {
       flex-direction: column; 
@@ -418,404 +446,534 @@
 
 
 
-  footer{
-    min-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: #F0F0F0;
-    background-image: url("https://www.giva.co/cdn/shop/files/lines.png?v=1709731978&width=1946");
-    padding: 60px 183px;
-    gap: 50px;
+  /*----------------------- Footer----------------------- */
+
+footer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  flex-wrap: wrap;
+  background-color: #F0F0F0;
+  background-image: url("https://www.giva.co/cdn/shop/files/lines.png?v=1709731978&width=1946");
+  padding: 60px 183px;
+  gap: 50px;
 }
 
 .footer_links{
-    list-style: none;
-    min-width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* flex-wrap: wrap; */
-    gap: 20px;
+  list-style: none;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  gap: 20px;
 }
 
 .footer_links .column{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 
 .column h4 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
-  
+
 .column ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-  
+
 .column li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-  
+
 .column a {
-    color: #333;
-    text-decoration: none;
+  color: #333;
+  text-decoration: none;
 }
 
 
 .subscribe-section{
-    min-width: 100%;
-    background-color: #F0F0F0;
-    padding: 60px ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 100px;
+  min-width: 100%;
+  background-color: #F0F0F0;
+  padding: 60px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
 }
 
 .email-container{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    min-width:40% ;
-    height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  min-width:40% ;
+  height: 200px;
 }
 .email-container p{
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .email-input{
-    min-width: 70%;
-    display: flex;
-    align-items: center;
-    border: 2px solid #C1C1C1;
+  min-width: 70%;
+  display: flex;
+  align-items: center;
+  border: 2px solid #C1C1C1;
 }
 .email-input:hover{
-    box-shadow: 0px 0px 2px black;
+  box-shadow: 0px 0px 2px black;
 }
 .email-input input{
-    height: 60px;
-    width: 100%;
-    padding: 20px;
-    border: none;
+  height: 60px;
+  width: 100%;
+  padding: 20px;
+  border: none;
 }
 
 .email-input button{
-    background-color: white;
-    height: 60px;
-    width: 20%;
-    border: none;
+  background-color: white;
+  height: 60px;
+  width: 20%;
+  border: none;
 }
 
 .social-icons{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    i{
-        font-size: 1.4rem;
-    }
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  i{
+      font-size: 1.4rem;
+  }
 }
 
 .footer__content-middle {
-    min-width: 100%; 
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
-    align-items: center; 
-    gap: 20px; 
-    padding: 20px; 
+  min-width: 100%; 
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: center; 
+  gap: 20px; 
+  padding: 20px; 
 }
 
 .footer_app_download, .footer-channel-partners {
-    width: 100%; 
-    max-width: 400px; 
-    text-align: center; 
+  width: 100%; 
+  max-width: 400px; 
+  text-align: center; 
 }
 
 
 .footer_app_download h3, .footer-channel-partners h3 {
-    font-size: 1.3rem; 
+  font-size: 1.3rem; 
 }
 
 .footer_content-bottom {
-    max-width: 100%;
-    display: flex;
+  max-width: 100%;
+  display: flex;
 }
 
 .footer_copyright {
-    text-align: center;
-    margin-top: 2.5rem;
+  text-align: center;
+  margin-top: 2.5rem;
 }
 
 
 
 .footer-related-searches {
-    background: url(//www.giva.co/cdn/shop/files/lines.png?v=1709731978&width=1946);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    padding-inline: 50px;
-    
+  background: url(//www.giva.co/cdn/shop/files/lines.png?v=1709731978&width=1946);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-inline: 50px;
+  
 }
 .footer-section {
-    text-align: left;
-    line-height: 1.5;
+  text-align: left;
+  line-height: 1.5;
 }
 
 .footer-section-title {
-    margin-top: 20px;
-    font-size: 15px;
-    font-weight: 700;
-    display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  display: inline-block;
 }
 .footer-links {
-    display: block;
+  display: block;
 }
 
 @media (max-width: 1024px) {
-    .footer{
-        padding: 60px 100px;
-    }
+  .footer{
+      padding: 60px 100px;
+  }
 
-    .footer_links .column {
-        width: 100%; 
-    }
+  .footer_links .column {
+      width: 100%; 
+  }
 
-    .column h4 {
-        font-size: 1.25rem; 
-    }
+  .column h4 {
+      font-size: 1.25rem; 
+  }
 
-    .subscribe-section {
-        flex-direction: column; 
-        padding: 30px; 
-        gap: 40px; 
-    }
+  .subscribe-section {
+      flex-direction: column; 
+      padding: 30px; 
+      gap: 40px; 
+  }
 
-    .email-container {
-        min-width: 100%; 
-        height: auto; 
-    }
+  .email-container {
+      min-width: 100%; 
+      height: auto; 
+  }
 
-    .email-input {
-        min-width: 100%; 
-    }
+  .email-input {
+      min-width: 100%; 
+  }
 
-    .social-icons {
-        justify-content: center; 
-    }
+  .social-icons {
+      justify-content: center; 
+  }
 
-    .footer__content-middle {
-        flex-direction: column; 
-        align-items: center;
-        gap: 30px;
-        padding: 20px; 
-    }
+  .footer__content-middle {
+      flex-direction: column; 
+      align-items: center;
+      gap: 30px;
+      padding: 20px; 
+  }
 
-    .footer_app_download {
-        align-items: center; 
-    }
+  .footer_app_download {
+      align-items: center; 
+  }
 
-    .footer-channel-partners {
-        margin-top: 20px; 
-    }
+  .footer-channel-partners {
+      margin-top: 20px; 
+  }
 
-    .footer_content-bottom {
-        flex-direction: column; 
-        align-items: center; 
-        margin-top: 20px; 
-    }
+  .footer_content-bottom {
+      flex-direction: column; 
+      align-items: center; 
+      margin-top: 20px; 
+  }
 
-    .footer_copyright {
-        margin-top: 10px; 
-    }
+  .footer_copyright {
+      margin-top: 10px; 
+  }
 
-    .footer-section {
-        margin-bottom: 15px; 
-    }
+  .footer-section {
+      margin-bottom: 15px; 
+  }
 
-    .footer-section-title {
-        display: block; 
-        margin-bottom: 5px; 
-    }
+  .footer-section-title {
+      display: block; 
+      margin-bottom: 5px; 
+  }
 
-    .footer-links {
-        display: block; 
-    }
+  .footer-links {
+      display: block; 
+  }
 
-    .footer-links a {
-        margin-bottom: 5px; 
-    }
+  .footer-links a {
+      margin-bottom: 5px; 
+  }
 }
 
 @media (max-width: 768px) {
-    .footer{
-        padding: 60px 30px;
-    }
-    .footer_links {
-        flex-direction: column; 
-        align-items: flex-start; 
-        padding: 0 20px; 
-    }
+  .footer{
+      padding: 60px 30px;
+  }
+  .footer_links {
+      flex-direction: column; 
+      align-items: flex-start; 
+      padding: 0 20px; 
+  }
 
-    .footer_links .column {
-        width: 100%; 
-        margin-bottom: 20px; 
-    }
+  .footer_links .column {
+      width: 100%; 
+      margin-bottom: 20px; 
+  }
 
-    .column h4 {
-        font-size: 1.25rem; 
-    }
+  .column h4 {
+      font-size: 1.25rem; 
+  }
 
-    .column ul {
-        gap: 5px; 
-    }
+  .column ul {
+      gap: 5px; 
+  }
 
-    .column li {
-        margin-bottom: 5px; 
-    }
+  .column li {
+      margin-bottom: 5px; 
+  }
 
-    .subscribe-section {
-        flex-direction: column;
-        padding: 20px;
-        gap: 20px;
-    }
+  .subscribe-section {
+      flex-direction: column;
+      padding: 20px;
+      gap: 20px;
+  }
 
-    .email-container {
-        min-width: 100%;
-        height: auto;
-        align-items: center;
-    }
+  .email-container {
+      min-width: 100%;
+      height: auto;
+      align-items: center;
+  }
 
-    .email-input {
-        min-width: 100%;
-    }
+  .email-input {
+      min-width: 100%;
+  }
 
-    .social-icons {
-        justify-content: center;
-    }
+  .social-icons {
+      justify-content: center;
+  }
 
-    .footer__content-middle {
-        padding: 10px; 
-    }
-    
+  .footer__content-middle {
+      padding: 10px; 
+  }
+  
 
-    .footer_app_download {
-        align-items: center;
-        gap: 10px;
-    }
+  .footer_app_download {
+      align-items: center;
+      gap: 10px;
+  }
 
-    .footer-channel-partners {
-        margin-top: 15px;
-    }
+  .footer-channel-partners {
+      margin-top: 15px;
+  }
 
-    .footer_content-bottom {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 15px;
-    }
+  .footer_content-bottom {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 15px;
+  }
 
-    .footer_copyright {
-        margin-top: 5px;
-    }
+  .footer_copyright {
+      margin-top: 5px;
+  }
 
-    .footer-section {
-        margin-bottom: 10px;
-    }
+  .footer-section {
+      margin-bottom: 10px;
+  }
 
-    .footer-section-title {
-        display: block;
-        margin-bottom: 5px;
-    }
+  .footer-section-title {
+      display: block;
+      margin-bottom: 5px;
+  }
 
-    .footer-links {
-        display: block;
-    }
+  .footer-links {
+      display: block;
+  }
 
-    .footer-links a {
-        margin-bottom: 5px;
-    }
+  .footer-links a {
+      margin-bottom: 5px;
+  }
 }
 
 
 @media screen and (max-width: 425px) {
-    .footer{
-        padding: 10px 10px;
-    }
-    .footer_links {
-        flex-direction: column; 
-        align-items: center; 
-        padding: 0 20px; 
-    }
+  .footer{
+      padding: 10px 10px;
+  }
+  .footer_links {
+      flex-direction: column; 
+      align-items: center; 
+      padding: 0 20px; 
+  }
 
 }
 
 
 @media (max-width: 375px) {
-    .footer__content-middle {
-        width: 200px;
-        flex-direction: column; 
-        padding: 10px; 
-    }
+  .footer__content-middle {
+      width: 200px;
+      flex-direction: column; 
+      padding: 10px; 
+  }
 
-    .footer_app_download{
-        display: none;
-    }
-    .footer-channel-partners {
-        width: 100%; 
-        max-width: none; 
-        text-align: center;
-    }
+  .footer_app_download{
+      display: none;
+  }
+  .footer-channel-partners {
+      width: 100%; 
+      max-width: none; 
+      text-align: center;
+  }
 
-    .footer_app_download h3, .footer-channel-partners h3 {
-        font-size: 1.2rem; 
-    }
+  .footer_app_download h3, .footer-channel-partners h3 {
+      font-size: 1.2rem; 
+  }
 
-    .footer-section {
-        margin-bottom: 10px; 
-    }
+  .footer-section {
+      margin-bottom: 10px; 
+  }
 
-    .footer-section-title {
-        font-size: 14px; 
-    }
+  .footer-section-title {
+      font-size: 14px; 
+  }
 
-    .footer-links a {
-        font-size: 12px; 
-    }
+  .footer-links a {
+      font-size: 12px; 
+  }
+}
+/* -------------- Recommended------------- */
+.recommended {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  z-index: 1; 
+  position: relative; 
+}
+
+.recommended-section-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  width: 280px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  z-index: 1; 
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  z-index: 1; 
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.product-image:hover .main-image {
+  opacity: 0;
+}
+
+.product-image:hover .hover-image {
+  opacity: 1;
+}
+
+.badge {
+  position: absolute;
+  z-index: -5;
+  top: 10px;
+  left: 10px;
+  background-color: #3A923B;
+  color: white;
+  font-size: 14px;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.fast-selling {
+  background-color: #3A923B;
+}
+.best{
+  background-color: orange;
+}
+
+.product-info {
+  padding: 20px;
+}
+
+.rating {
+  font-size: 14px;
+  color: #f39c12;
+}
+
+.price {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.current-price {
+  font-weight: bold;
+  color: #333;
+}
+
+.original-price {
+  font-size: 14px;
+  color: #888;
+  text-decoration: line-through;
+}
+
+.product-name {
+  font-size: 16px;
+  color: #333;
+}
+
+.add-to-cart {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  background: linear-gradient(to right, #ff6f91, #ffe0e5);
+  border: none;
+  /* color: white; */
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background: linear-gradient(to right, #ff4f71, #ff4f71);
+}
+
+.wishlist {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2; 
 }
 
 
+.heart-icon {
+  font-size: 35px;
+  color: #ff4f71;
+  transition: color 0.3s ease;
+}
 
-.help {
-    position: fixed;
-    bottom: 25px; /* Adjust as needed */
-    right: 25px;  /* Adjust as needed */
-    z-index: 10002;
-    cursor: pointer;
+/* .wishlist:hover {
+  background-color: rgba(255, 255, 255, 1);
+} */
+
+.wishlist:hover .heart-icon {
+  color: #ff2a50;
 }
-.help img{
-    width: 50px;
-    height: 50px;
-}
-@media screen and (max-width: 425px) {
-    .help {
-        bottom: 10px; /* Move it closer to the edge on smaller screens */
-        right: 10px;  /* Move it closer to the edge on smaller screens */
-        height: auto; /* Maintain aspect ratio */
-    }
-    .help img{
-        width: 50px;
-        height: 50px;
-    }
-}
+
