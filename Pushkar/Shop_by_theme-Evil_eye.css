@@ -477,8 +477,12 @@ ul li:hover ul.drop{
 
 .product-card:hover {
     transform: translateY(-10px);
+    cursor: pointer;
 }
 
+.product-name:hover{
+    text-decoration: underline;
+}
 .product-image {
     position: relative;
     width: 100%;
