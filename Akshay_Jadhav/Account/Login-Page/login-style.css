@@ -186,7 +186,6 @@ a{
 }
 
 
-
 /* Nested dropdown (submenu) */
 .dropdown-submenu {
     display: none;
@@ -202,6 +201,7 @@ a{
   .dropdown li:hover .dropdown-submenu {
     display: block;
   }
+
 
 .info{
     min-width: 100%;
@@ -315,428 +315,100 @@ a{
     }
 }
 
-/* --------------HERO SECTION -------------- */
-
-.hero-section{
-    min-width: 100%;
-    margin-block: 20px;
-    
-}
-
-.hero-section img{
-    width: 100%;
-    height: 100%;
-    /* min-height: 50%;
-    min-width: 50%; */
-    object-fit: cover;
-}
-.slider {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    z-index: -1;
-}
 
 
-/*-------------------sub nav------------------ */
-.sub-navbar {
-    min-width: 100%;
-    position: sticky;
-    top: 120px; /* Adjust the top position based on the height of navbar_1 and navbar_2 */
-    z-index: 998;
-    background-color: white;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-.sub-dropdown{
-    height: auto;
-}
-ul li ul.drop li{
-    display: block;
-    margin: 14px 0;
-
-}
-
-ul li ul.drop{
-    width: auto;
-    position:absolute;
-    background-color: white;
-    border: #222;
-    border-radius: 10%;
-    z-index: 999;
-    display: none;
-}
-/* ul li a:hover{
-    color: #ff2a50;
-    
-} */
-ul li:hover ul.drop{
-    display: block;
-    width: auto;
-    font-size: large;
-}
-.details:hover{
-    cursor: pointer;
-    
-}
-
-.list{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    list-style-type:none;
-    & li{
-        margin: 25px;
-    }
-}
-.slide img{
-    width: 100%;
-    height: auto;
-    
-}
 .container {
     display: flex;
-    justify-content:center;
-    /*flex-flow: row wrap;*/
-    margin-top: -180px;
-    
-}
-
-.shorting{
-    position: relative;
-    left: 20px;
-    font-size: 1.3rem;
-    margin: 20px;
-    color: grey;
-}
-
-
-@media (max-width: 1200px) {
-    .list {
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 15px;
-    }
-    ul li:hover ul.drop {
-        width: auto;
-    }
-    .shorting{
-        position: static;
-    }
-}
-
-@media (max-width: 768px) {
-    .sub-navbar{
-        position: static;
-        top: 0; /* Adjust the top position based on the height of navbar_1 and navbar_2 */
-        z-index: 1;
-    }
-    
-    ul li ul.drop {
-        position: static; /* Dropdown won't overlap */
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .sub-navbar {
-        padding: 5px;
-    }
-
-    .list {
-        display: none;
-    }
-
-    .shorting {
-        font-size: 1rem;
-        margin: 10px;
-    }
-
-    ul li ul.drop {
-        font-size: medium;
-    }
-}
-
-
-/* -------------- bhumi------------- */
-.bhumi{
-    margin-block: 50px;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-}
-
-.bhumi-section-card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-
-}
-
-.product-card {
-    width: 280px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    /* margin: 20px; */
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.product-card:hover {
-    transform: translateY(-10px);
-}
-
-.product-image {
-    position: relative;
-    width: 100%;
-    height: 250px;
-    overflow: hidden;
-}
-
-.product-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.3s ease;
-}
-
-.hover-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-}
-
-.product-image:hover .main-image {
-    opacity: 0;
-}
-
-.product-image:hover .hover-image {
-    opacity: 1;
-}
-
-.badge {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: #3A923B;
-    color: white;
-    font-size: 14px;
-    padding: 3px 8px;
-    border-radius: 5px;
-}
-
-.fast-selling {
-    background-color: #3A923B;
-}
-.best{
-    background-color: orange;
-}
-
-.product-info {
-    padding: 20px;
-}
-
-.rating {
-    font-size: 14px;
-    color: #f39c12;
-}
-
-.price {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.current-price {
-    font-weight: bold;
-    color: #333;
-}
-
-.original-price {
-    font-size: 14px;
-    color: #888;
-    text-decoration: line-through;
-}
-
-.product-name {
-    font-size: 16px;
-    color: #333;
-}
-
-.add-to-cart {
-    margin-top: 15px;
-    padding: 10px;
-    width: 100%;
-    background: linear-gradient(to right, #ff6f91, #ffe0e5);
-    border: none;
-    /* color: white; */
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.add-to-cart:hover {
-    background: linear-gradient(to right, #ff4f71, #ff4f71);
-}
-
-.wishlist {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
-    background: transparent;
-    padding: 5px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.heart-icon {
-    font-size: 35px;
-    color: #ff4f71;
-    transition: color 0.3s ease;
-}
-
-/* .wishlist:hover {
-    background-color: rgba(255, 255, 255, 1);
-} */
-
-.wishlist:hover .heart-icon {
-    color: #ff2a50;
-}
-.bhumi button{
-    display: block;
-    margin-block: 10px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 1px solid #888;
-}
-
-.bhumi button:hover{
-    background-color: #e4e3e3;
-    border: none;
-}
-
-
-
-/* -------------Collapsible----------------- */
-
-.collapsible {
-    /* margin-bottom: 10px; */
-    padding-inline: 20px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.collapsible-header {
-    padding: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: #f9f9f9;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #777676;
-}
-
-.collapsible-content {
-    padding: 15px;
-    display: none;
-    color: #121212;
-    font-size: 16px;
+    width: 400px;
+    margin: 60px auto;
+    font-family: 'Lato', Assistant, sans-serif;
     letter-spacing: 0.5px;
-    font-family:"Lato", "Avenir Next", sans-serif;
-    line-height: 30px;
 }
 
-.collapsible-content ul {
-    padding-left: 40px;
+.heading {
+    text-align: left;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    font-weight: 400;
 }
 
-.collapsible-content a {
-    text-decoration: underline;
-    color: blue;
-    padding-right: 5px;
+label {
+    text-align: left;
+    font-size: 0.9rem;
+    color: #333;
+    padding: 4px;
 }
 
-.arrow {
-    transition: transform 0.3s ease;
+#email {
+    margin-bottom: 15px;
 }
 
-.collapsible.active .arrow {
-    transform: rotate(180deg);
+input {
+    width: 100%;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.collapsible.active .collapsible-content {
-    display: block;
+.forgot-password {
+    text-align: left;
+    color: #ff6677;
+    font-size: 0.8rem;
+    margin: 0 0 10px 0;
+    cursor: pointer;
+    letter-spacing: 0;
 }
 
-.light-text {
-    color: #646363;
+button {
+    padding: 5px;
+    background-color: #f0627d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    justify-content: center;
+    margin: 0 auto;
+    transition: box-shadow 0.3s ease;
 }
 
-.collapsible-content ol {
-    padding:20px 20px 20px 40px;
-
+button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 768px) {
-    body {
-        padding: 15px;
+.new-account {
+    text-align: center;
+    color: #ff6677;
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin-top: 10px;
+    letter-spacing: 0;
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        width: 300px;
+        margin: 40px auto;
+    }
+
+    .heading {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
     }
     
-    /* .collapsible-header {
-        padding: 12px;
-        font-size: 14px;
-    }
-
-    .collapsible-content {
-        padding: 12px;
-        font-size: 13px;
-    }
-
-    .arrow {
-        font-size: 14px;
-    } */
 }
 
-/* For very small devices (like phones) */
-@media (max-width: 480px) {
-    .collapsible-header {
-        padding: 10px;
-        font-size: 13px;
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    .arrow {
-        font-size: 12px;
-        margin-top: 5px; /* Separate arrow from text on smaller screens */
-    }
 
-    .collapsible-content {
-        padding: 10px;
-        font-size: 12px;
-    }
 
-    .collapsible-content ol {
-        padding:10px 10px 10px 20px;
-    }
-}
+
+
+
+
+
 
 
 
