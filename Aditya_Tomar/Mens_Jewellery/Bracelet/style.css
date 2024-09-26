@@ -1,15 +1,20 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Lato&display=swap');
-
-* {
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-body{
-    Font-style: normal;
-    Font-family: lato, avenir next, sans-serif;
+
+body {
+    max-width: 100vw;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 /*----------------------- header----------------------- */
 .info{
@@ -145,6 +150,7 @@ body{
 .nav-links a:hover {
     color: #e9718b;
     text-decoration: 2px underline;
+    background-color: #fff;
 }
 
 .dropdown {
@@ -887,6 +893,20 @@ footer{
     text-align: center;
     margin-top: 2.5rem;
 }
+.channel_partners_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px; /* Adds space between images */
+    padding: 10px 0; /* Adds padding between rows */
+}
+
+.channel_partners_row img {
+    max-height: 47px; /* Sets a consistent height for the logos */
+    width: auto; /* Ensures aspect ratio is maintained */
+    object-fit: contain; /* Ensures the image fits within its bounds without stretching */
+}
+
 
 
 
