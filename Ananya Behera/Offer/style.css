@@ -176,6 +176,25 @@
 .dropdown a:hover {
   color: #e9718b;
   /* background-color: #f1f1f1; */
+<<<<<<< HEAD
+=======
+}
+
+/* Nested dropdown (submenu) */
+.dropdown-submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.dropdown li:hover .dropdown-submenu {
+  display: block;
+>>>>>>> fa611aa5864758c7e3b45811a43e9add437772d5
 }
 
 /* Nested dropdown (submenu) */
