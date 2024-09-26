@@ -36,7 +36,6 @@ a{
     color: black;
 }
 
-/*----------------------- header----------------------- */
 .section-title {
     display: flex;
     flex-direction: column;
@@ -46,6 +45,7 @@ a{
     margin: 1rem 0;
 }
 
+/*----------------------- header----------------------- */
 .info{
     min-width: 100%;
     background-color: #FCDEDA;
@@ -230,9 +230,6 @@ a{
 
 
 @media (max-width: 1024px) {
-    .header{
-        /* gap: 20px; */
-    }
     .header .navbar_1 {
         flex-direction: column;
         align-items: center;
@@ -244,7 +241,7 @@ a{
     }
 
     .navbar_1 .search {
-        min-width: 90%;
+        min-width: 50%;
         input{
             min-width: 90%
         }
@@ -267,9 +264,16 @@ a{
     .navbar_2 .nav-links{
         display: none;
     }
-    
+    .navbar_1 .nav_icons {
+        display: none;
+    }
+
     .dropdown li{
         display: none;
+    }
+    .navbar_2{
+        padding: 0;
+        margin: 0;
     }
 }
 
@@ -290,7 +294,7 @@ a{
     }
 
     .navbar_1 .search {
-        min-width: 90%; 
+        display: none;
     }
 
     .navbar_1 .search input {
@@ -307,9 +311,6 @@ a{
         font-size: 0.6rem; 
     }
 
-    .navbar_2 {
-        padding: 10px 15px; 
-    }
 
     .nav-links {
         flex-direction: column; 
@@ -325,7 +326,6 @@ a{
         display: none;
     }
 }
-
 
 /* --------------HERO SECTION -------------- */
 
@@ -740,7 +740,7 @@ input[type="radio"] {
   }
 
 
-/* footer section*/
+/*----------------------- Footer----------------------- */
 
 footer{
     min-width: 100%;
@@ -797,7 +797,6 @@ footer{
 }
 
 
-
 .subscribe-section{
     min-width: 100%;
     background-color: #F0F0F0;
@@ -843,7 +842,6 @@ footer{
     border: none;
 }
 
-
 .social-icons{
     display: flex;
     gap: 20px;
@@ -855,29 +853,26 @@ footer{
     }
 }
 
-
-
 .footer__content-middle {
-    min-width: 100%; /* Ensure it takes the full width */
+    min-width: 100%; 
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items */
-    gap: 20px; /* Add space between items */
-    padding: 20px; /* Add some padding */
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px; 
 }
 
 .footer_app_download, .footer-channel-partners {
-    width: 100%; /* Ensure they take full width */
-    max-width: 400px; /* Limit the max width for better layout */
-    text-align: center; /* Center text within each section */
+    width: 100%; 
+    max-width: 400px; 
+    text-align: center; 
 }
-
 
 
 .footer_app_download h3, .footer-channel-partners h3 {
-    font-size: 1.3rem; /* Adjust font size for headings */
+    font-size: 1.3rem; 
 }
-
 
 .footer_content-bottom {
     max-width: 100%;
@@ -896,10 +891,11 @@ footer{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding-inline: 50px;
-    }
+    
+}
 .footer-section {
     text-align: left;
-    line-height: 1;
+    line-height: 1.5;
 }
 
 .footer-section-title {
@@ -1035,7 +1031,7 @@ footer{
     }
 
     .footer__content-middle {
-        padding: 10px; /* Add padding for mobile */
+        padding: 10px; 
     }
     
 
@@ -1093,32 +1089,56 @@ footer{
 @media (max-width: 375px) {
     .footer__content-middle {
         width: 200px;
-        flex-direction: column; /* Ensure stacking for small screens */
-        padding: 10px; /* Add padding */
+        flex-direction: column; 
+        padding: 10px; 
     }
 
     .footer_app_download{
         display: none;
     }
     .footer-channel-partners {
-        width: 100%; /* Full width */
-        max-width: none; /* Remove max-width for better flexibility */
-        text-align: center; /* Center text */
+        width: 100%; 
+        max-width: none; 
+        text-align: center;
     }
 
     .footer_app_download h3, .footer-channel-partners h3 {
-        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        font-size: 1.2rem; 
     }
 
     .footer-section {
-        margin-bottom: 10px; /* Space between footer sections */
+        margin-bottom: 10px; 
     }
 
     .footer-section-title {
-        font-size: 14px; /* Adjust font size for titles */
+        font-size: 14px; 
     }
 
     .footer-links a {
-        font-size: 12px; /* Adjust font size for links */
+        font-size: 12px; 
+    }
+}
+
+
+.help {
+    position: fixed;
+    bottom: 25px; /* Adjust as needed */
+    right: 25px;  /* Adjust as needed */
+    z-index: 10002;
+    cursor: pointer;
+}
+.help img{
+    width: 50px;
+    height: 50px;
+}
+@media screen and (max-width: 425px) {
+    .help {
+        bottom: 10px; /* Move it closer to the edge on smaller screens */
+        right: 10px;  /* Move it closer to the edge on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+    .help img{
+        width: 50px;
+        height: 50px;
     }
 }
