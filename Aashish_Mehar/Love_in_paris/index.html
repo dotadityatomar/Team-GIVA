@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="GiftStore_style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet">
 </head>
 <body>
-    
     <!---------------- HEADER ---------------->
     <div class="info">
-      <a href="#">Pan India Free Shipping!</a>
+      <a href="#">0% Making Charges on 120+ Gold Diamond</a>
     </div>
     <header class="header">
         <nav class="navbar_1">
@@ -106,189 +104,344 @@
       </nav>
     </header>
 
-    <section class="container">
-        <div class="slider-wrapper">
-            <div class="slider">
-                <input type="radio" name="slider" id="slide-1" checked>
-                <input type="radio" name="slider" id="slide-2">
-                
-                <div class="slides">
-                    <img src="./Assets/20-_Bestsellers_WEB_Hero_banner-min.webp" alt="Slide 1">
-                    <img src="./Assets/Red_Ronance_Gold_Bnr_Hero_Web_1920x600-min_6bb4857e-54b2-4b63-af58-19d26fe96da7.webp" alt="Slide 2">
-                </div>
-            </div>
-            <div class="slider-nav">
-                <label for="slide-1"></label>
-                <label for="slide-2"></label>
-            </div>
-        </div>
+    <section class="hero-section">
+      <div class="slider">
+          <div class="slides">
+              <div class="slide"><img src="https://www.giva.co/cdn/shop/files/collection_banner-web_7_-min_f1995baa-3a05-4132-ab84-1ffb90d839fb.jpg?v=1688122506&width=1780" alt=""></div>
+          </div>
+      </div>
     </section>
 
-    <div class="section-title"> 
-        <h2>Shop By Recipient</h2>
-      </div>
-  
-      <section class="shop-by-recipient-section">
-        <div class="shop-by-recipient-div">
-            <a href="#"><img src="./Assets/01.webp"></a>
-            <a href="#"><img src="./assets/02.webp"></a>
-            <a href="#"><img src="./assets/03.webp"></a>
-            <a href="#"><img src="./assets/04.webp"></a>
-            <a href="#"><img src="./assets/05.webp"></a>
-            <a href="#"><img src="./assets/06.webp"></a>
-            <a href="#"><img src="./assets/07.webp"></a>
+    <nav class="sub-navbar">
+        <div class="sub-dropdown">
+            <ul class="list">
+                <li class="details">Product type &#x25BE;
+                    <ul class="drop">
+                        <li class="DP"><input type="checkbox"> Bracelet(20)</li>
+                        <li><input type="checkbox"> Chains  (12)</li>
+                        <li><input type="checkbox"> Earrings(11)</li>
+                        <li><input type="checkbox"> Pendant(20)</li>
+                        <li><input type="checkbox"> Rings    (13)</li>
+                    </ul>
+                </li>
+                <li class="details">Price &#x25BE;
+                    <ul class="drop">
+                        <li><input type="number" placeholder="0" min="0" max="20000"></li>
+                        <li><input type="number" placeholder="20000" min="0" max="20000"></li>
+                        <input type="range" min="0" max="20000" value="0" step="1">
+                        
+                    </ul>
+                </li>
+                <li class="details">Shop For &#x25BE;
+                    <ul class="drop">
+                        <li><input type="checkbox"> Men (23)</li>
+                        <li><input type="checkbox"> Women (0)</li>
+                    </ul>
+                </li>
+                <li class="details">Color &#x25BE;
+                    <ul class="drop">
+                        <li class="DP"><input type="checkbox"> Silver(16)</li>
+                        <li><input type="checkbox"> Gold(2)</li>
+                        <li><input type="checkbox"> Oxidised Silver(4)</li>
+                        <li><input type="checkbox">  Black Rhodium (0)</li>
+                        
+                    </ul>
+                </li>
+                <li class="details">Metal &#x25BE;
+                    <ul class="drop">
+                        <li><input type="checkbox"> 925 Silver  (21)</li>
+                        
+                    </ul>
+                </li>
+                <li class="details">Stone &#x25BE;
+                    <ul class="drop">
+                        <li class="DP"><input type="checkbox"> Colored Stone (16)</li>
+                        <li><input type="checkbox"> Colored Zircon (2)</li>
+                        <li><input type="checkbox"> Zircon (4)</li>
+                        <li><input type="checkbox">  None (0)</li>
+                        
+                    </ul>
+                </li>
+                <li class="details">Style &#x25BE;
+                    <ul class="drop">
+                        <li><input type="checkbox"> Office(2)</li>
+                        <li><input type="checkbox"> Everyday(4)</li>
+                        <li><input type="checkbox"> Party(0)</li>
+                        
+                    </ul>
+                </li>
+                <li class="details">Sub Category &#x25BE;
+                    <ul class="drop">
+                        <li><input type="checkbox">  Bands(0)</li>
+                        <li><input type="checkbox"> Studs (0)</li>
+                        <li><input type="checkbox"> Classics(1)</li>
+                        <li><input type="checkbox"> Spiritual(11)</li>
+                        <li><input type="checkbox"> Chains(0)</li>
+                        <li><input type="checkbox"> Cuffs(0)</li>
+                        <li><input type="checkbox"> Mens(6)</li>
+                        <li><input type="checkbox"> Pendant (1)</li>
+                        <li><input type="checkbox"> Religious(2)</li>
+                        
+                    </ul>
+                </li>
+            </ul>
         </div>
-      </section>
-
-      <div class="section-title">
-        <h2>Shop By Theme</h2>
-      </div>
-  
-      <section class="shop-by-theme-section">
-        <div class="shop-by-theme-div">
-          <div class="top">
-            <a href="#"><img src="./Assets/11.webp"></a>
-            <a href="#"><img src="./assets/12.webp"></a>
-            <a href="#"><img src="./assets/13.webp"></a>
-          </div>
-          <div class="bottom">
-            <a href="#"><img src="./assets/14.webp"></a>
-            <a href="#"><img src="./assets/15.webp"></a>
-            <a href="#"><img src="./assets/16.webp"></a>
-          </div>
-        </div>
-      </section>  
-      
-      <div class="section-title">
-        <h2>Shop By Occasion</h2>
-      </div>
-  
-      <section class="shop-by-theme-section">
-        <div class="shop-by-theme-div">
-          <div class="top">
-            <a href="#"><img src="./Assets/21.webp"></a>
-            <a href="#"><img src="./assets/22.webp"></a>
-            <a href="#"><img src="./assets/23.webp"></a>
-          </div>
-          <div class="bottom">
-            <a href="#"><img src="./assets/24.webp"></a>
-            <a href="#"><img src="./assets/25.webp"></a>
-            <a href="#"><img src="./assets/26.webp"></a>
-          </div>
-        </div>
-      </section>
+        <hr>
+        <span class="shorting">20 Products</span>
+    </nav>
     
-    <div class="most-gifted">
-        <h2>Most Gifted</h2>
-        <div class="recommended-section-card">
+    <div class="paris">
+        <div class="paris-section-card">
+
             <div class="product-card">
                 <div class="product-image">
-                    <img src="https://www.giva.co/cdn/shop/products/ER0583_PD0434_1.jpg?v=1634899482&width=533" alt="Silver Zircon Drizzle Drop Earrings" class="main-image">
-                    <img src="https://www.giva.co/cdn/shop/products/ER0583_PD0434_3.0.jpg?v=1672317189&width=533" alt="Silver Zircon Drizzle Drop Earrings" class="hover-image">
+                    <img src="https://www.giva.co/cdn/shop/files/PD01220_1.jpg?v=1711627531&width=713" alt="" class="main-image">
+                    <img src="https://www.giva.co/cdn/shop/files/PD01220_5.jpg?v=1711627531&width=713" alt="" class="hover-image">
                     <!-- <span class="badge fast-selling">Fast Selling</span> -->
                     <div class="wishlist">
                         <span class="heart-icon">&#9825;</span> <!-- Unicode for heart shape -->
                     </div>
                 </div>
                 <div class="product-info">
-                    <p class="rating">4.9 ★ | 83</p>
-                    <p class="price"><span class="current-price">₹3,199</span> <span class="original-price">₹5,799</span></p>
-                    <p class="product-name">Anushka Sharma Rose Gold...</p>
+                    <p class="rating">4.6 ★ | 21</p>
+                    <p class="price"><span class="current-price">₹2,099</span> <span class="original-price">₹3,799</span></p>
+                    <p class="product-name">Rose Gold Flowing Crocus Pend.. </p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
             </div>
-    
+
             <div class="product-card">
                 <div class="product-image">
-                    <img src="https://www.giva.co/cdn/shop/files/PD01335_1.jpg?v=1694700287&width=533" alt="Silver Zircon Drizzle Drop Earrings" class="main-image">
-                    <img src="https://www.giva.co/cdn/shop/files/PD01335_5.jpg?v=1694700287&width=533" alt="Silver Zircon Drizzle Drop Earrings" class="hover-image">
-                    <span class="badge fast-selling">Diva's Pick</span>
+                    <img src="https://www.giva.co/cdn/shop/products/ER01275_1_1.jpg?v=1668087893&width=713" alt="" class="main-image">
+                    <img src="https://www.giva.co/cdn/shop/products/ER01275_5.jpg?v=1696512259&width=713" alt="" class="hover-image">
+                    <!-- <span class="badge fast-selling">Fast Selling</span> -->
                     <div class="wishlist">
                         <span class="heart-icon">&#9825;</span> <!-- Unicode for heart shape -->
                     </div>
                 </div>
                 <div class="product-info">
-                    <p class="rating">4.8 ★ | 122</p>
-                    <p class="price"><span class="current-price">2,099</span> <span class="original-price">₹3,799</span></p>
-                    <p class="product-name">Rose Gold Deer Heart Necklace...</p>
+                    <p class="rating">4.9 ★ | 7</p>
+                    <p class="price"><span class="current-price">₹1,799</span> <span class="original-price">₹2,999</span></p>
+                    <p class="product-name">Rose Gold Notre Dame Earrings</p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
             </div>
-    
+
             <div class="product-card">
                 <div class="product-image">
-                    <img src="https://www.giva.co/cdn/shop/files/PD0234_1.jpg?v=1711627711&width=533" alt="Silver Zircon Drizzle Drop Earrings" class="main-image">
-                    <img src="https://www.giva.co/cdn/shop/files/PD0234_5.jpg?v=1711627711&width=533" alt="Silver Zircon Drizzle Drop Earrings" class="hover-image">
-                    <span class="badge fast-selling">Diva's Pick</span>
+                    <img src="https://www.giva.co/cdn/shop/products/ER01373_1-min.jpg?v=1668087544&width=713" alt="" class="main-image">
+                    <img src="https://www.giva.co/cdn/shop/products/ER01373_5-min.jpg?v=1682740522&width=713" alt="" class="hover-image">
+                    <span class="badge fast-selling" style="background-color: palevioletred;">Diva's Pick</span>
                     <div class="wishlist">
                         <span class="heart-icon">&#9825;</span> <!-- Unicode for heart shape -->
                     </div>
                 </div>
                 <div class="product-info">
-                    <p class="rating">4.8 ★ | 60</p>
-                    <p class="price"><span class="current-price">₹1,999</span> <span class="original-price">₹3,599</span></p>
-                    <p class="product-name">Rose Gold Sparkling Infinity...</p>
+                    <p class="rating">4.4 ★ | 7</p>
+                    <p class="price"><span class="current-price">₹1,799</span> <span class="original-price">₹3,199</span></p>
+                    <p class="product-name">Rose Gold French Beauty Earrings</p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
             </div>
-    
+
             <div class="product-card">
                 <div class="product-image">
-                    <img src="https://www.giva.co/cdn/shop/files/PD061_1.jpg?v=1712928583&width=533" alt="Silver Zircon Drizzle Drop Earrings" class="main-image">
-                    <img src="https://www.giva.co/cdn/shop/files/PD061_5.jpg?v=1712928583&width=533" alt="Silver Zircon Drizzle Drop Earrings" class="hover-image">
-                    <span class="badge fast-selling">Diva's Pick</span>
+                    <img src="https://www.giva.co/cdn/shop/files/PD01986_1.jpg?v=1696512295&width=713" alt="" class="main-image">
+                    <img src="https://www.giva.co/cdn/shop/files/PD01986_5.jpg?v=1696512295&width=713" alt="" class="hover-image">
+                    <!-- <span class="badge fast-selling">Fast Selling</span> -->
                     <div class="wishlist">
                         <span class="heart-icon">&#9825;</span> <!-- Unicode for heart shape -->
                     </div>
                 </div>
                 <div class="product-info">
-                    <p class="rating">4.9 ★ | 164</p>
-                    <p class="price"><span class="current-price">₹1,999</span> <span class="original-price">₹3,599</span></p>
-                    <p class="product-name">Silver Infinity Heart Necklace...</p>
+                    <p class="rating">5.0 ★ | 1</p>
+                    <p class="price"><span class="current-price">₹2,799</span> <span class="original-price">₹4,799</span></p>
+                    <p class="product-name">Rose Gold Notre Dame Pend..</p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
             </div>
+
             <div class="product-card">
                 <div class="product-image">
-                    <img src="https://www.giva.co/cdn/shop/files/ER0582_1_7e551a23-43aa-4b92-bea8-16cad78154f9.jpg?v=1712925439&width=533" alt="Silver Zircon Drizzle Drop Earrings" class="main-image">
-                    <img src="https://www.giva.co/cdn/shop/files/ER0582_5_876f1c68-f98a-4849-83e9-06032bab293e.jpg?v=1712925439&width=533" alt="Silver Zircon Drizzle Drop Earrings" class="hover-image">
-                    <!-- <span class="badge fast-selling best">Best seller</span> -->
+                    <img src="https://www.giva.co/cdn/shop/files/PD01315_1.jpg?v=1694084839&width=713" alt="" class="main-image">
+                    <img src="https://www.giva.co/cdn/shop/files/PD01315_5.jpg?v=1694084839&width=713" alt="" class="hover-image">
+                    <span class="badge fast-selling" style="background-color: rgb(0, 119, 255);">Limited Edition</span>
                     <div class="wishlist">
                         <span class="heart-icon">&#9825;</span> <!-- Unicode for heart shape -->
                     </div>
                 </div>
                 <div class="product-info">
-                    <p class="rating">4.8 ★ | 152</p>
-                    <p class="price"><span class="current-price">₹1,299</span> <span class="original-price">₹2,199</span></p>
-                    <p class="product-name">Silver Flowery Sparkling Ear...</p>
+                    <p class="rating">5.0 ★ | 1</p>
+                    <p class="price"><span class="current-price">₹4,299</span> <span class="original-price">₹7,799</span></p>
+                    <p class="product-name">Rose Gold French Beauty Necklace</p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
             </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://www.giva.co/cdn/shop/products/ER01271_1-min.jpg?v=1668087930&width=713" alt="" class="main-image">
+                    <img src="https://www.giva.co/cdn/shop/products/ER01271_5-min.jpg?v=1685516402&width=713" alt="" class="hover-image">
+                    <!-- <span class="badge fast-selling">Fast Selling</span> -->
+                    <div class="wishlist">
+                        <span class="heart-icon">&#9825;</span> <!-- Unicode for heart shape -->
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="rating">5.0 ★ | 2</p>
+                    <p class="price"><span class="current-price">₹2,799</span> <span class="original-price">₹4,799</span></p>
+                    <p class="product-name">Rose Gold Blessed Notre..</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://www.giva.co/cdn/shop/files/ER01275_PD01986_1.jpg?v=1696510902&width=713" alt="" class="main-image">
+                    <img src="https://www.giva.co/cdn/shop/files/ER01275_PD01986_5_e9d7e03e-d836-4728-b37f-f486c7513437.jpg?v=1696510917&width=713" alt="" class="hover-image">
+                    <!-- <span class="badge fast-selling">Fast Selling</span> -->
+                    <div class="wishlist">
+                        <span class="heart-icon">&#9825;</span> <!-- Unicode for heart shape -->
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="rating">5.0 ★ | 7</p>
+                    <p class="price"><span class="current-price">₹4,299</span> <span class="original-price">₹7,599</span></p>
+                    <p class="product-name">Rose Gold Notre Dame Set</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://www.giva.co/cdn/shop/products/PD01315_ER1373_1-min.jpg?v=1668087686&width=713" alt="" class="main-image">
+                    <img src="https://www.giva.co/cdn/shop/products/PD01315_ER1373_2-min.jpg?v=1668087686&width=713" alt="" class="hover-image">
+                    <!-- <span class="badge fast-selling">Fast Selling</span> -->
+                    <div class="wishlist">
+                        <span class="heart-icon">&#9825;</span> <!-- Unicode for heart shape -->
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="rating">4.6 ★ | 20</p>
+                    <p class="price"><span class="current-price">₹5,899</span> <span class="original-price">₹10,799</span></p>
+                    <p class="product-name">Rose Gold French Beauty Set</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://www.giva.co/cdn/shop/files/ER02134_1.jpg?v=1696511111&width=713" alt="" class="main-image">
+                    <img src="https://www.giva.co/cdn/shop/files/ER02134_5_ab30a2f2-6a8c-4a72-9144-85bc4c2e6593.jpg?v=1696513638&width=713" alt="" class="hover-image">
+                    <!-- <span class="badge fast-selling">Fast Selling</span> -->
+                    <div class="wishlist">
+                        <span class="heart-icon">&#9825;</span> <!-- Unicode for heart shape -->
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="rating">5.0 ★ | 1</p>
+                    <p class="price"><span class="current-price">₹3,699</span> <span class="original-price">₹6,599</span></p>
+                    <p class="product-name">Rose Gold Dream Tower Tea..</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://www.giva.co/cdn/shop/files/BR0779_1.jpg?v=1696572714&width=713" alt="" class="main-image">
+                    <img src="https://www.giva.co/cdn/shop/files/BR0779_5_31ca200a-8ad7-4ef1-96b0-4f97e33a4156.jpg?v=1696572714&width=713" alt="" class="hover-image">
+                    <!-- <span class="badge fast-selling">Fast Selling</span> -->
+                    <div class="wishlist">
+                        <span class="heart-icon">&#9825;</span> <!-- Unicode for heart shape -->
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="rating">4.6 ★ | 240</p>
+                    <p class="price"><span class="current-price">₹3,399</span> <span class="original-price">₹5,999</span></p>
+                    <p class="product-name">Rose Gold Love In Paris Bracelet</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            
+
+            <!-- <div class="product-card">
+                <div class="product-image">
+                    <img src="" alt="" class="main-image">
+                    <img src="" alt="" class="hover-image">
+                    <span class="badge fast-selling" style="background-color: palevioletred;">Diva's Pick</span>
+                    <div class="wishlist">
+                        <span class="heart-icon">&#9825;</span> 
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="rating">4.9 ★ | 227</p>
+                    <p class="price"><span class="current-price">₹1,699</span> <span class="original-price">₹2,799</span></p>
+                    <p class="product-name"></p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div> -->
+
+            <div class="view-more btn">
+                <a href="#">View More</a>
+            </div>
+            
         </div>
-        <div class="view-more btn">
-            <a href="#">View More</a>
+    </div>
+    
+
+    <div class="collapsible">
+        <div class="collapsible-header">
+            Embark on a Journey of Love with our Exclusive Design Collection
+            <span class="arrow">&#9660;</span>
+        </div>
+        <div class="collapsible-content">
+            Paris, often called the city of love, is a realm where the very air is infused with romance. In every corner, amid the cobbled streets and beside the Seine's gentle flow, love finds its canvas to paint breathtaking stories. It's a lover's utopia, where enchantment dwells in every nook and cranny, captivating hearts with its irresistible allure. At GIVA, we embrace the ethereal essence of Parisian romance, weaving it into the fabric of our exquisite Exclusive Design Collection. Every piece is a chapter of love, waiting to grace your life with its timeless beauty.
         </div>
     </div>
 
-
-    <div class="section-title"> 
-        <h2>Shop By Price</h2>
-      </div>
-  
-      <section class="shop-by-price-section">
-        <div class="shop-by-price-div">
-            <a href="#"><img src="./Assets/des_1500_d_new-min1.webp"></a>
-            <a href="#"><img src="./Assets/des_1500-3000new-min2.webp"></a>
-            <a href="#"><img src="./Assets/des3k-5k_new-min3.webp"></a>
-            <a href="#"><img src="./Assets/new_des_5000_d-min4.webp"></a>
+    <div class="collapsible">
+        <div class="collapsible-header">
+            Elegance Redefined by Lea Schroeder, GIVA's Exclusive Designer Range
+            <span class="arrow">&#9660;</span>
         </div>
-      </section>
+        <div class="collapsible-content">
+            Experience the artistry of Lea Schroeder, a renowned jewellery designer, through our fine jewellery range. Each piece is a masterpiece that reflects Lea's passion for creating captivating designs. Immerse yourself in the allure of jewelleries that make you feel like a true diva, shining with elegance and grace. Indulge in the allure of our exclusive designer range, featuring a captivating fusion of 925 silver, gold, and rose gold pieces. Our collection is designed to make hearts flutter and people fall in love with its charm. From enchanting necklaces to mesmerising rings, each piece tells a unique story of beauty and elegance.
+        </div>
+    </div>
 
-    <section class="bestseller-page">
-        <a href="#"><img src="./Assets/Group_2608701.webp"></a>
-    </section>
-   
+    <div class="collapsible">
+        <div class="collapsible-header">
+            Fall in Love with Elegance
+            <span class="arrow">&#9660;</span>
+        </div>
+        <div class="collapsible-content">
+            Experience the magic of our exclusive design collection, where every piece is crafted to inspire love and admiration. Discover a world of options, including necklaces that grace your neckline and rings that adorn your fingers with timeless beauty. Find your desired fine jewellery at a discounted price, making your dreams of elegance come true. Our exclusive jewelleries are crafted from premium metals such as 925 silver, rose gold, and gold. Each piece is a testament to the skill and dedication of our craftsmen, creating masterpieces that exude elegance and sophistication. Elevate your style with jewelleries that radiate beauty and grace.
+        </div>
+    </div>
     
+    <div class="collapsible">
+        <div class="collapsible-header">
+            A Gift for Special Moments
+            <span class="arrow">&#9660;</span>
+        </div>
+        <div class="collapsible-content">
+            Celebrate life's most cherished moments with our exclusive jewelleries. Whether it's a wedding, anniversary, or any special occasion, our collection offers timeless pieces that symbolise love and commitment. Gift your loved ones an expression of elegance that will be cherished forever. Experience the convenience of shopping at GIVA from the comfort of your home. Our user-friendly online platform ensures a hassle-free shopping experience. Say goodbye to crowded stores and long queues. With just a few clicks, you can order your favourite jewelleries and have them delivered to your doorstep.
+        </div>
+    </div>
+    
+    <div class="collapsible">
+        <div class="collapsible-header">
+            Embrace the Joy of Free Shipping with GIVA
+            <span class="arrow">&#9660;</span>
+        </div>
+        <div class="collapsible-content">
+            We understand the excitement of receiving your cherished jewelleries. That's why we offer free shipping on all orders, ensuring your items reach you safely and promptly. Experience the joy of unboxing your elegant treasures, ready to adorn you with grace. Download the GIVA app and stay connected with the latest offers, collections, and updates. Explore a world of elegance and beauty at your fingertips. Our app keeps you informed about the newest arrivals and exclusive deals, allowing you to stay ahead of the fashion curve. At GIVA, we believe that elegance knows no bounds. That's why we consistently introduce new jewellery gift options every week. Explore our evolving collection and discover a range of timeless pieces that redefine elegance and style.
+        </div>
+    </div>
+
+   
+    <!---------------- FOOTER ---------------->
     <footer class="footer">
         <div class="footer_links">
             <!-- Quick Links Section -->
@@ -516,5 +669,21 @@
             </div>
           </div>
     </footer>
+
+    <div class="help">
+        <img src="https://www.giva.co/cdn/shop/t/95/assets/haptik-icon.png?v=142570081121018976651699896225" alt="">
+    </div>
+
+    <script>
+        document.querySelectorAll('.collapsible-header').forEach(header => {
+        header.addEventListener('click', function() {
+        const collapsible = this.parentElement;
+
+        // Toggle the active class
+        collapsible.classList.toggle('active');
+        });
+    });
+
+    </script>
 </body>
 </html>
