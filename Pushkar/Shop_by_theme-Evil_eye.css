@@ -446,7 +446,7 @@ ul li:hover ul.drop{
 
 
 /* -------------- Evil------------- */
-.evil{
+.theme{
     margin-block: 50px;
     display: flex;
     flex-direction: column;
@@ -455,7 +455,7 @@ ul li:hover ul.drop{
     gap: 50px;
 }
 
-.evil-section-card{
+.theme-section-card{
     display: flex;
     justify-content: center;
     align-items: center;
