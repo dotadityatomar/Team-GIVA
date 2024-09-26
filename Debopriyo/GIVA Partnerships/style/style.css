@@ -477,4 +477,66 @@ p {
   /* contact */
 
 
- 
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .icons {
+        gap: 10px;
+        font-size: 18px;
+    }
+
+    .partnership-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info, .image {
+        max-width: 90%;
+    }
+    .testimonial-img{
+        width: 121px;
+        height: auto;
+    margin-right: 16px;
+    border: 2px solid #80808047;
+    box-shadow: -1px 0px 2px 0px #6c6b6b7d;
+
+}
+.testimonials{
+    width: 100%;
+    padding: 0 10px;
+}
+.image img{
+    width: 100%;
+}
+.image{
+    max-width: 100%;
+}
+
+
+
+}
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .icons {
+        font-size: 16px;
+    }
+
+    .partnerships h1 {
+        font-size: 1.5em;
+    }
+
+    .enquire-btn {
+        width: 100%;
+    }
+}
