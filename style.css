@@ -11,6 +11,15 @@ body {
     font-weight: 400;
     font-style: normal;
     scroll-behavior: smooth;
+    animation: fadeup 0.8s ease-in-out 0.1s 1 ;
+}
+@keyframes fadeup {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 a{
     text-decoration: none;
