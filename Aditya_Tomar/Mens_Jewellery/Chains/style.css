@@ -145,6 +145,7 @@ body{
 .nav-links a:hover {
     color: #e9718b;
     text-decoration: 2px underline;
+    background-color: white;
 }
 
 .dropdown {
@@ -1122,4 +1123,13 @@ footer{
         font-size: 12px; 
     }
 }
-
+.sub-navbar{
+    position: sticky;
+    top:110px; /* Adjust the top position based on the height of navbar_1 and navbar_2 */
+    z-index: 998;
+    
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
