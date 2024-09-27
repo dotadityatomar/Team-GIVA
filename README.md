@@ -141,5 +141,28 @@ For any inquiries, feedback, or support, please reach out to us:
 - *Social Media*: Follow us on our social media platforms for updates, promotions, and community engagement.
 
 ---
+##Screen Shots--
+
+1. Header Section:
+The header contains the logo, search bar, and navigation links.
+![image](https://github.com/user-attachments/assets/8bd59f8b-96be-4857-824d-7c1015464b20)
+
+2.Product Grid:
+The product grid displays the jewelry items, each with its own image, name, rating, and price, along with an "Add to Cart" button.
+![image](https://github.com/user-attachments/assets/115e93e8-0796-4658-8be7-72525798990f)
+![image](https://github.com/user-attachments/assets/7aaf8aac-5c75-46cd-9102-3e095eb12d97)
+![image](https://github.com/user-attachments/assets/2f20fc6f-6d17-42c2-ae8f-75e0ab65a349)
+
+
+3.Footer Section:
+The footer section contains quick links, contact information, and options to download the GIVA app from both the Google Play Store and the Apple App Store.
+
+![image](https://github.com/user-attachments/assets/c303821c-3eff-4ebe-bb3c-420e1abf4676)
+![image](https://github.com/user-attachments/assets/f0803e4f-25e1-4b4f-a1a1-4d61547896fd)
+![image](https://github.com/user-attachments/assets/5bbc033c-2b88-4367-9a23-87d35fea4dd2)
+
+
+-------------------------------------------
+
 
 Thank you for exploring the GIVA Jewelry Homepage Clone repository! This project is a great way to learn about web development and design principles. We hope you find it useful and informative. Happy coding!
