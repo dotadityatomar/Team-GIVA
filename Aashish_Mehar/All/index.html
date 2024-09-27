@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!---------------- HEADER ---------------->
@@ -140,7 +141,7 @@
         </nav>
     </header>
 
-    <section class="hero-section">
+    <section data-aos="fade-up" class="hero-section">
       <div class="slider">
           <div class="slides">
               <div class="slide"><img src="https://www.giva.co/cdn/shop/files/All_Jewellery_Collection_Web_copy_2-min.jpg?v=1720780028&width=1780" alt=""></div>
@@ -148,7 +149,7 @@
       </div>
     </section>
 
-    <nav class="sub-navbar">
+    <nav data-aos="fade-up" class="sub-navbar">
         <div class="sub-dropdown">
             <ul class="list">
                 <li class="details">Product type &#x25BE;
@@ -226,7 +227,7 @@
         <span class="shorting">670 Products</span>
     </nav>
     
-    <div class="all">
+    <div data-aos="fade-up" class="all">
         <div class="all-section-card">
 
             <div class="product-card">
@@ -934,7 +935,7 @@
     </div>
     
 
-    <div class="collapsible">
+    <div data-aos="fade-up" class="collapsible">
         <div class="collapsible-header">
             Gold Plated Rings: Affordable Luxury and Lasting Shine
             <span class="arrow">&#9660;</span>
@@ -944,7 +945,7 @@
         </div>
     </div>
 
-    <div class="collapsible">
+    <div data-aos="fade-up" class="collapsible">
         <div class="collapsible-header">
             Couple Rings: Celebrate Love that lasts forever
             <span class="arrow">&#9660;</span>
@@ -954,7 +955,7 @@
         </div>
     </div>
 
-    <div class="collapsible">
+    <div data-aos="fade-up" class="collapsible">
         <div class="collapsible-header">
             Personalised Rings: Custom-made Gifts
             <span class="arrow">&#9660;</span>
@@ -964,7 +965,7 @@
         </div>
     </div>
     
-    <div class="collapsible">
+    <div data-aos="fade-up" class="collapsible">
         <div class="collapsible-header">
             Engagement Rings: Symbols of Eternal Love
             <span class="arrow">&#9660;</span>
@@ -974,7 +975,7 @@
         </div>
     </div>
     
-    <div class="collapsible">
+    <div data-aos="fade-up" class="collapsible">
         <div class="collapsible-header">
             Rings for Men: Timeless and Stylish
             <span class="arrow">&#9660;</span>
@@ -986,7 +987,7 @@
 
    
     <!---------------- FOOTER ---------------->
-    <footer class="footer">
+    <footer data-aos="fade-up" class="footer">
         <div class="footer_links">
             <!-- Quick Links Section -->
             <div class="column">
@@ -1235,6 +1236,11 @@
             navbar2.classList.toggle('active'); // Toggles the 'active' class
         });
 
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
     </script>
 </body>
 </html>
