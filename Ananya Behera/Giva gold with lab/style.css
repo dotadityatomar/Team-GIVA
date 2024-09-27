@@ -134,6 +134,9 @@ a{
     flex-wrap: wrap;
     gap: 20px;
 }
+.navbar_2 .nav-links {
+    transition: all 0.3s ease;
+}
 
 .nav-links li {
     position: relative;
@@ -263,7 +266,21 @@ a{
         margin: 0;
     }
 }
+@media (max-width: 768px) {
+    .navbar_1 .menu-icon {
+        display: block; /* Hamburger icon visible */
+    }
 
+    .navbar_2 .nav-links {
+        display: none; /* Hide the links initially */
+        flex-direction: column; /* Stack links vertically when shown */
+        gap: 10px;
+    }
+
+    .navbar_2.active .nav-links {
+        display: flex; /* Show links when .active is added */
+    }
+}
 
 @media (max-width: 425px) {
     body {
