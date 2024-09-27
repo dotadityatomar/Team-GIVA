@@ -135,7 +135,9 @@ a{
     flex-wrap: wrap;
     gap: 20px;
 }
-
+.navbar_2 .nav-links {
+    transition: all 0.3s ease;
+}
 .nav-links li {
     position: relative;
 }
@@ -151,7 +153,11 @@ a{
 .nav-links a:hover {
     color: #e9718b;
     text-decoration: 2px underline;
+<<<<<<< HEAD
+    background-color: white;
+=======
     background-color: #fff;
+>>>>>>> 17b5f99321959eb40d4e5342b6d7bfeedb36cf6a
 }
 
 .dropdown {
@@ -218,9 +224,7 @@ a{
 
 
 @media (max-width: 1024px) {
-    .header{
-        /* gap: 20px; */
-    }
+    
     .header .navbar_1 {
         flex-direction: column;
         align-items: center;
@@ -247,17 +251,19 @@ a{
         gap: 20px;
     }
 }
-@media (max-width: 768px){
-    .navbar_1 .menu-icon{
-        display: initial;
-        cursor: pointer;
+@media (max-width: 768px) {
+    .navbar_1 .menu-icon {
+        display: block; /* Hamburger icon visible */
     }
-    .navbar_2 .nav-links{
-        display: none;
+
+    .navbar_2 .nav-links {
+        display: none; /* Hide the links initially */
+        flex-direction: column; /* Stack links vertically when shown */
+        gap: 10px;
     }
-    
-    .dropdown li{
-        display: none;
+
+    .navbar_2.active .nav-links {
+        display: flex; /* Show links when .active is added */
     }
 }
 
@@ -1142,4 +1148,13 @@ footer{
         font-size: 12px; 
     }
 }
-
+.sub-navbar{
+    position: sticky;
+    top:110px; /* Adjust the top position based on the height of navbar_1 and navbar_2 */
+    z-index: 998;
+    
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}

@@ -11,6 +11,15 @@ body {
     font-weight: 400;
     font-style: normal;
     scroll-behavior: smooth;
+    animation: fadeup 0.8s ease-in-out 0.1s 1 ;
+}
+@keyframes fadeup {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 a{
     text-decoration: none;
@@ -134,6 +143,9 @@ a{
     flex-wrap: wrap;
     gap: 20px;
 }
+.navbar_2 .nav-links {
+    transition: all 0.3s ease;
+}
 
 .nav-links li {
     position: relative;
@@ -216,9 +228,6 @@ a{
 
 
 @media (max-width: 1024px) {
-    .header{
-        /* gap: 20px; */
-    }
     .header .navbar_1 {
         flex-direction: column;
         align-items: center;
@@ -245,17 +254,19 @@ a{
         gap: 20px;
     }
 }
-@media (max-width: 768px){
-    .navbar_1 .menu-icon{
-        display: initial;
-        cursor: pointer;
+@media (max-width: 768px) {
+    .navbar_1 .menu-icon {
+        display: block; /* Hamburger icon visible */
     }
-    .navbar_2 .nav-links{
-        display: none;
+
+    .navbar_2 .nav-links {
+        display: none; /* Hide the links initially */
+        flex-direction: column; /* Stack links vertically when shown */
+        gap: 10px;
     }
-    
-    .dropdown li{
-        display: none;
+
+    .navbar_2.active .nav-links {
+        display: flex; /* Show links when .active is added */
     }
 }
 
