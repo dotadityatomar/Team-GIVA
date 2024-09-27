@@ -212,6 +212,21 @@ a{
     background-color: #f1f1f1;
 }
 
+/* Nested dropdown (submenu) */
+.dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .dropdown li:hover .dropdown-submenu {
+    display: block;
+  }
 
 
 
